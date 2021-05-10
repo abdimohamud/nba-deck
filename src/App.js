@@ -3,39 +3,53 @@ import axios from 'axios'
 import {Container, Grid} from '@material-ui/core'
 import ScoreBoard from './components/ScoreBoard'
 import './App.scss';
-
-
-
-
-
-
-
+import Home from './components/Home';
+import {Switch, Route} from 'react-router-dom'
+import data from './components/data.json'
 
 function App() {
-  const [teamsLogos, setTeamsLogos] = useState([])
+  const [teams, setTeams] = useState(data)
   const endpoint = "https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=nba";
 
-  useEffect(()=>{
-    if(teamsLogos.length===0){
-      axios.get(endpoint)
-      .then(res=>setTeamsLogos(res.data.teams.map(team=>{
-        return team.strTeamBadge
-      })))
-      .catch(err=>console.log(err))
-    }
-  },[teamsLogos])
+  // useEffect(()=>{
+  //   if(teams.length===0){
+  //     axios.get(endpoint)
+  //     .then(res=>setTeams(res.data.teams.map(team=>{
+  //       let reso ={
+  //         name:team.strTeam,
+  //         stadium:team.strStadium,
+  //         abv:team.strTeamShort,
+  //         website:team.strWebsite,
+  //         fb:team.strFacebook,
+  //         twitter:team.strTwitter,
+  //         yt:team.strYoutube,
+  //         badge:team.strTeamBadge,
+  //         jersey:team.strTeamJersey,
+  //         logo:team.strTeamLogo,
+  //         fanart:team.strTeamFanart,
+  //         banner:team.strTeamBanner,
+  //         desc:team.strDescriptionEN,
+  //     }
+  //       return reso
+  //     })))
+  //     .catch(err=>console.log(err))
+  //   }
+  // },[teams])
 
 
-  console.log(teamsLogos)
+  console.log(teams)
   return (
 <Container maxWidth="md">
-  {teamsLogos.map((logo, idx)=>(
+  <Switch>
+    <Route exact path="/">
+  <Home teams={teams}/>
+    </Route>
+    <Route path="/scoreboard">
+    <ScoreBoard/>
+    </Route>
+  </Switch>
 
-<Grid item xs={2} key={idx} >
-<img width="60px" height="60px" alt="Away Team Logo" src={logo}/>
-</Grid>
-))}
-   {/* <ScoreBoard/> */}
+
     </Container>
   );
 }
