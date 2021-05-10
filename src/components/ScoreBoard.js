@@ -1,18 +1,12 @@
 import React from 'react'
 import data from './data.json'
-import "./LiveScores.scss";
-import { getJSONData} from "./../tools/Toolkit";
-import { LiveScore, Game, Period } from "./../tools/nba.model";
-import { LastFive, MonthGroup, , Gamelast } from "./../tools/last5.model";
-import { liveScoresProps } from "./../tools/data.model";
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Accordion, AccordionDetails, AccordionSummary, Box, createStyles, Grid, LinearProgress, TableCell, TableRow, Theme, Typography, withStyles } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const RETREIVE_LIVEMATCH_JSON= "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json";
-  
 
+const RETREIVE_LIVEMATCH_JSON= "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json";
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -47,26 +41,18 @@ const useStyles = makeStyles((theme) => ({
         minWidth: 100,
     },
   }));
+  
 
 const ScoreBoard = () => {
      console.log(data)
-
+    console.log("Date", data.scoreboard.gameDate)
+     console.log("Games", data.scoreboard.games)
      const classes = useStyles();
+     
     return (
         <div>
-             <div>
-            <Grid container>
-                <Grid item xs={12}>
-                    <div className="liveScoreHeader"> 
-                        <h2>GAMES</h2>
-                    </div>
-                </Grid>
-            </Grid>
-           
-                {/* This is where all the games will be shown by mapping the api */}
-            <div className="games">
             <Grid container  spacing={3}  alignContent="center" justify="center">
-            {data.games.map((game,n) => {
+            {data.scoreboard.games.map((game,n) => {
                 return <div className="matches" key={n}>
                         {(game.gameStatusText === "PPD") ?
                                 <div></div>
@@ -130,7 +116,7 @@ const ScoreBoard = () => {
                                                 In Bonus : {game.homeTeam.inBonus}
                                             </Box>
                                             <Box fontSize={14} fontWeight={700}>Last 5 games</Box>
-                                            {teamsData.filter(team => team.profile.city.includes(game.homeTeam.teamCity)).map((data:,n) => {
+                                            {/* {teamsData.filter(team => team.profile.city.includes(game.homeTeam.teamCity)).map((data,n) => {
                                                 return <span key={n}>
                                                     {data.monthGroups.map((monthGroup,m) => {
                                                         return <span key={m}>
@@ -160,7 +146,7 @@ const ScoreBoard = () => {
                                                         </span>
                                                     })}
                                                 </span>
-                                            })}
+                                            })} */}
 
                                         </Grid>
                                         <Grid item xs={2}>
@@ -202,7 +188,7 @@ const ScoreBoard = () => {
                                                 In Bonus : {game.awayTeam.inBonus}
                                             </Box>
                                             <Box fontSize={14} fontWeight={700}>Last 5 games</Box>
-                                            {teamsData.filter(team => team.profile.city.includes(game.awayTeam.teamCity)).map((data:,n) => {
+                                            {/* {teamsData.filter(team => team.profile.city.includes(game.awayTeam.teamCity)).map((data,n) => {
                                                 return <span key={n}>
                                                     {data.monthGroups.map((monthGroup,m) => {
                                                         return <span key={m}>
@@ -232,7 +218,7 @@ const ScoreBoard = () => {
                                                         </span>
                                                     })}
                                                 </span>
-                                            })}
+                                            })} */}
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Grid container direction="row" justify="center" alignItems="center" >
@@ -280,8 +266,7 @@ const ScoreBoard = () => {
                         </div>
                 })}
             </Grid>
-            </div>
-        </div>
+            
         </div>
     )
 }
