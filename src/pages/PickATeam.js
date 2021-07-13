@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Paper, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import teams from '../data.json'
 const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
     
@@ -28,11 +29,11 @@ const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
          
             <br/>
             <br/>
-             <Paper className={classes.paper} style={{border:'1px solid black'}}><h1 style={{textAlign:'center', color:'black'}}> {favTeam?favTeam:''}</h1></Paper>
+             <Paper className={classes.paper} style={{border:'1px solid black'}}><h1 style={{textAlign:'center', color:'black'}}> {favTeam?favTeam.name:''}</h1></Paper>
              <br/>
              <Grid container spacing={3}>
           {teams.map((team, idx) => (
-              <div key={idx}onClick={(e) => {
+              <div key={idx} name={team.name}onClick={(e) => {
                   handleClick(e);
                 }}>
             <Grid item xs>
@@ -50,7 +51,8 @@ const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
                
                   width="60px"
                   height="60px"
-                  alt={team.name}
+                  id ={team.name}
+                  alt={team.abv}
                   src={team.badge}
                 />       
               </Paper>
@@ -58,9 +60,12 @@ const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
           ))}
         </Grid>
         <br />
-        <Paper className={classes.paper} style={{ border: "1px solid black" }}>
+        {favTeam?   <Link to={`/team/${favTeam.abv}`}><Paper className={classes.paper} style={{ border: "1px solid black" }}>
           <h1 style={{ textAlign: "center", color: "black" }}> Next</h1>
-        </Paper>
+        </Paper></Link>:<Paper className={classes.paper} style={{ border: "1px solid black" }}>
+          <h1 style={{ textAlign: "center", color: "black" }}> Next</h1>
+        </Paper>}
+        
             </Container>
         </div>
     )

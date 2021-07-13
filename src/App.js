@@ -9,14 +9,14 @@ function App() {
   const handleClick = e =>{
     console.log(e)
     e.preventDefault()
-    setFavTeam(e.target.alt)
+    setFavTeam({abv:e.target.alt, name:e.target.id})
   }
   return (
     <div>
       <Switch>
         <Route exact path="/"><Home/></Route>
         <Route path="/pick-a-team"><PickATeam setFavTeam={setFavTeam} handleClick={handleClick} favTeam={favTeam}/></Route>
-        <Route path="/team"><Team favTeam={favTeam}/></Route>
+        <Route path="/team/:id"><Team favTeam={favTeam}/></Route>
       </Switch>
     </div>
   );
