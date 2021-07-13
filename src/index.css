@@ -77,3 +77,9 @@ html, body {
     transform: scale(.2, 0.5);
   }
 }
+
+
+
+.MuiGrid-spacing-xs-2 {
+  width:100%
+}
