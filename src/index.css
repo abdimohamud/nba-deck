@@ -24,6 +24,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 .container {
@@ -80,6 +81,3 @@ html, body {
 
 
 
-.MuiGrid-spacing-xs-2 {
-  width:100%
-}
