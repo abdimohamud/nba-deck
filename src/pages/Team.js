@@ -193,11 +193,11 @@ export default function Team() {
             <Grid item xs={12}>
               <Paper className={classes.paper} style={{flexDirection:'row', justifyContent:'space-evenly'}}>
          
-                <a target="blank" rel="noopener noreferrer" href={`https://wwww.youtube.com/${team.strYoutube.replace('https://www.youtube.com/', '')}`}> <i class="fab fa-youtube"></i></a>
-                <a target="blank" rel="noopener noreferrer" href={`${team.strTwitter}`}><i class="fab fa-twitter"></i></a>
-                <a target="blank" rel="noopener noreferrer" href={`${team.strFacebook}`}><i class="fab fa-facebook-f"></i></a>
-                <a target="blank" rel="noopener noreferrer" href={`${team.strWebsite}`}><i class="fas fa-globe"></i></a>
-                <a target="blank" rel="noopener noreferrer" href={`${team.strInstagram}`}> <i class="fab fa-instagram"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`https://wwww.youtube.com/${team.strYoutube}`}> <i class="fab fa-youtube"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`https://www.twitter.com/${team.strTwitter}`}><i class="fab fa-twitter"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`https://www.facebook.com/${team.strFacebook}`}><i class="fab fa-facebook-f"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`https://www.${team.strWebsite}`}><i class="fas fa-globe"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`https://www.instagram.com/${team.strInstagram}`}> <i class="fab fa-instagram"></i></a>
               </Paper>
             </Grid>
           </Grid>
