@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { useParams } from 'react-router';
-import teams from '../data.json'
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -12,6 +11,7 @@ import clsx from 'clsx';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';
+import teams from '../response.json'
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -100,7 +100,7 @@ export default function Team() {
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   useEffect(()=>{
     if(!team){
-      let res = teams.filter(e => e.abv.toString() === id.toString())[0]
+      let res = teams.teams.filter(e => e.strTeamShort.toString() === id.toString())[0]
       console.log(res)
       setTeam(res)
     }
@@ -111,7 +111,7 @@ export default function Team() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
         <Box pt={4}>
-          <img src={team.banner} alt={team.banner}/>
+          <img src={team.strTeamBanner} alt={team.strTeamBanner}/>
           </Box>
           <Grid container spacing={3}>
             {/* Chart */}
@@ -119,32 +119,43 @@ export default function Team() {
               <Paper className={fixedHeightPaper}>
                 {/* <Chart /> */}
                 <React.Fragment>
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>{team.name} ({team.abv})</Typography>
+                <Typography component="h2" variant="h6" color="primary" gutterBottom>{team.strTeam} ({team.strTeamShort})</Typography>
      <Paper>Home</Paper>
-     {team.desc}
+     {team.strDescriptionEN}
         </React.Fragment>
               </Paper>
             </Grid>
             {/* Recent Deposits */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-             <img   id ={team.name}
-                  alt={team.abv}
-                  src={team.badge} />
+             <img   id ={team.strTeam}
+                  alt={team.strTeamShort}
+                  src={team.strTeamBadge} />
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-             <img   id ={team.name}
-                  alt={team.jersey}
-                  src={team.jersey} />
+             <img   id ={team.strTeam}
+                  alt={team.strTeamJersey}
+                  src={team.strTeamJersey} />
+              </Paper>
+            </Grid>
+            <Grid item xs={12} md={4} lg={3}>
+              <Paper >
+                {/* {team.strStadium} */}
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strStadium}
+                  src={team.strStadiumThumb} />
               </Paper>
             </Grid>
             {/* Recent Orders */}
             <Grid item xs={12}>
-              <Paper className={classes.paper}>
+              <Paper className={classes.paper} style={{flexDirection:'row', justifyContent:'space-evenly'}}>
                 {/* <Orders /> */}
-                <i class="fab fa-youtube"></i>
+                <a target="_tab" rel="noopener noreferrer" href={team.strYoutube.toString()}> <i class="fab fa-youtube"></i></a>
+                <a target="_tab" rel="noopener noreferrer" href={team.strTwitter}><i class="fab fa-twitter"></i></a>
+                <a target="_tab" rel="noopener noreferrer" href={team.strFacebook}><i class="fab fa-facebook-f"></i></a>
+                <a target="_tab" rel="noopener noreferrer" href={team.strWebsite}><i class="fas fa-globe"></i></a>
               </Paper>
             </Grid>
           </Grid>
