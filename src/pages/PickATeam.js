@@ -3,8 +3,8 @@ import { Container, Paper, Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import teams from '../response.json'
-const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
-    console.log(favTeam)
+const PickATeam = ({favTeam,  handleClick}) => {
+
     const useStyles = makeStyles((theme) => ({
         root: {
           flexGrow: 1,

@@ -5,9 +5,9 @@ import PickATeam from './pages/PickATeam'
 import Team from './pages/Team'
 function App() {
   const [favTeam, setFavTeam] = useState(null)
-  console.log(favTeam)
+ 
   const handleClick = e =>{
-    console.log(e)
+   
     e.preventDefault()
     setFavTeam({abv:e.target.alt, name:e.target.id})
   }

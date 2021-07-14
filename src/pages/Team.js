@@ -93,15 +93,15 @@ export default function Team() {
   const [team, setTeam] = useState(null)
 
   const classes = useStyles();
-  console.log(id)
+  
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   useEffect(()=>{
     if(!team){
       let res = teams.teams.filter(e => e.strTeamShort.toString() === id.toString())[0]
-      console.log(res)
+      
       setTeam(res)
     }
-  }, [team])
+  }, [team, id])
   return team && (
     <Grid container className={classes.root} spacing={2} >
       <main className={classes.content}>
