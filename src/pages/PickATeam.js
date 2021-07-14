@@ -33,13 +33,13 @@ const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
              <br/>
              <Grid container spacing={3}>
           {teams.teams.map((team, idx) => (
-              <div key={idx} name={team.strTeam}onClick={(e) => {
+              <div   key={idx} name={team.strTeam}onClick={(e) => {
                   handleClick(e);
                 }}>
             <Grid item xs>
               <Paper
                 className={classes.paper}
-                style={{ border: "1px solid black" }}
+                style={{ border: "1px solid black" , marginLeft:'25px', marginBottom:'10px'}}
                 id={team.strTeam}
                 
                
@@ -62,9 +62,7 @@ const PickATeam = ({favTeam, setFavTeam, handleClick}) => {
         <br />
         {favTeam?   <Link to={`/team/${favTeam.abv}`}><Paper className={classes.paper} style={{ border: "1px solid black" }}>
           <h1 style={{ textAlign: "center", color: "black" }}> Next</h1>
-        </Paper></Link>:<Paper className={classes.paper} style={{ border: "1px solid black" }}>
-          <h1 style={{ textAlign: "center", color: "black" }}> Next</h1>
-        </Paper>}
+        </Paper></Link>:''}
         
             </Container>
         </div>

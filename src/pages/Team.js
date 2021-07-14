@@ -8,9 +8,6 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import clsx from 'clsx';
-// import Chart from './Chart';
-// import Deposits from './Deposits';
-// import Orders from './Orders';
 import teams from '../response.json'
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -110,22 +107,22 @@ export default function Team() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-        <Box pt={4}>
+        <Box pt={4} style={{display:'flex', justifyContent:'center'}}>
           <img src={team.strTeamBanner} alt={team.strTeamBanner}/>
           </Box>
           <Grid container spacing={3}>
-            {/* Chart */}
+
             <Grid item xs={12} md={8} lg={9}>
               <Paper className={fixedHeightPaper}>
-                {/* <Chart /> */}
+              
                 <React.Fragment>
                 <Typography component="h2" variant="h6" color="primary" gutterBottom>{team.strTeam} ({team.strTeamShort})</Typography>
-     <Paper>Home</Paper>
+     
      {team.strDescriptionEN}
         </React.Fragment>
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+          
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
              <img   id ={team.strTeam}
@@ -141,21 +138,66 @@ export default function Team() {
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
+              <Paper>Stadium : {team.strStadium}</Paper>
+              <Paper>Capacity : {team.intStadiumCapacity}</Paper>
+              <Paper>Location : {team.strStadiumLocation}</Paper>
               <Paper >
-                {/* {team.strStadium} */}
+             
              <img  style={{width:'100%'}} id ={team.strTeam}
                   alt={team.strStadium}
                   src={team.strStadiumThumb} />
               </Paper>
             </Grid>
-            {/* Recent Orders */}
+            <Grid item xs={12} md={4} lg={3}>
+              <Paper>Logo</Paper>
+              <Paper >
+             
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strTeamLogo}
+                  src={team.strTeamLogo} />
+              </Paper>
+            </Grid>
+            <Grid container wrap="nowrap" direction="row">
+              <Paper>Fan Art</Paper>
+              <Paper >
+             
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strStadium}
+                  src={team.strTeamFanart1} />
+              </Paper>
+              <Paper >
+             
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strStadium}
+                  src={team.strTeamFanart2} />
+              </Paper>
+              <Paper >
+             
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strStadium}
+                  src={team.strTeamFanart3} />
+              </Paper>
+              <Paper >
+             
+             <img  style={{width:'100%'}} id ={team.strTeam}
+                  alt={team.strStadium}
+                  src={team.strTeamFanart4} />
+              </Paper>
+            </Grid>
+
+            <Grid>
+               <React.Fragment>{team.strStadiumDescription} </React.Fragment>
+            </Grid>
+            
+           
             <Grid item xs={12}>
               <Paper className={classes.paper} style={{flexDirection:'row', justifyContent:'space-evenly'}}>
-                {/* <Orders /> */}
-                <a target="_tab" rel="noopener noreferrer" href={team.strYoutube.toString()}> <i class="fab fa-youtube"></i></a>
-                <a target="_tab" rel="noopener noreferrer" href={team.strTwitter}><i class="fab fa-twitter"></i></a>
-                <a target="_tab" rel="noopener noreferrer" href={team.strFacebook}><i class="fab fa-facebook-f"></i></a>
-                <a target="_tab" rel="noopener noreferrer" href={team.strWebsite}><i class="fas fa-globe"></i></a>
+         
+                <a target="blank" rel="noopener noreferrer" href={`${team.strYoutube}`}> <i class="fab fa-youtube"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`${team.strTwitter}`}><i class="fab fa-twitter"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`${team.strFacebook}`}><i class="fab fa-facebook-f"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`${team.strWebsite}`}><i class="fas fa-globe"></i></a>
+                <a target="blank" rel="noopener noreferrer" href={`${team.strInstagram}`}> <i class="fab fa-instagram"></i></a>
               </Paper>
             </Grid>
           </Grid>
