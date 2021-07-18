@@ -67,7 +67,7 @@ const PickATeam = ({ favTeam, handleClick }) => {
         </Grid>
         <br />
         {favTeam ? (
-          <Link to={`/team/${favTeam.abv}`}>
+          <Link to={`/team/${favTeam.abv}`} style={{ textDecoration: 'none' }}>
             <Paper
               className={classes.paper}
               style={{ border: "1px solid black" }}
