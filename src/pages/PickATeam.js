@@ -38,6 +38,7 @@ const PickATeam = ({ favTeam, handleClick }) => {
             <div
               key={idx}
               name={team.strTeam}
+              id={team.strTeam}
               onClick={(e) => {
                 handleClick(e);
               }}

@@ -7,7 +7,7 @@ function App() {
   const [favTeam, setFavTeam] = useState(null);
 
   const handleClick = (e) => {
-    console.log(e);
+    
     e.preventDefault();
     setFavTeam({ abv: e.target.alt, name: e.target.id });
   };
