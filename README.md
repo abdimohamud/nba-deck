@@ -3,6 +3,8 @@
 <p align="center">Just a little cool nba encloypedia/fan page that I made with using JSON data from https://thesportsdb.com/. You can select a team get and some pretty basic inoformation such as links to their eternal sites (socials, websites, stores) , geogrpahic info of a team and their stadium, as well as fan art! </p>
 
 
+![Alt Text](public/nbadeck.gif)
+
 
 <h2 align="center">Tech Used</h2>
 
