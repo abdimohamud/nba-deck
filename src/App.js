@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Switch, Route } from "react-router-dom";
+import {
+  fetchTeamColors,
+  fetchTeamData,
+  fetchTeamDetails,
+  fetchTeamImages,
+  fetchTeamRosters,
+} from "./redux/actions";
+import Landing from "./pages/Landing";
+import PickATeam from "./pages/PickATeam";
+import Dashboard from "./pages/Dashboard";
+const App = () => {
+  const dispatch = useDispatch();
+  const { teams, rosters, colors, images, teamData } = useSelector(
+    (state) => state.preferences
   );
-}
+  useEffect(() => {
+    if (!teams && !rosters && !colors && !images && !teamData) {
+      dispatch(fetchTeamDetails());
+      dispatch(fetchTeamRosters());
+      dispatch(fetchTeamColors());
+      dispatch(fetchTeamImages());
+      dispatch(fetchTeamData());
+    }
+  }, [teams, dispatch, rosters, colors, images, teamData]);
+  return (
+    <Switch>
+      <Route path="/team/:id">
+        <Dashboard />
+      </Route>
+      <Route path="/pick-a-team">
+        <PickATeam />
+      </Route>
+      <Route exact path="/">
+        <Landing />
+      </Route>
+    </Switch>
+  );
+};
 
 export default App;
