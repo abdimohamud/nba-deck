@@ -3,9 +3,9 @@ import { combineReducers } from "redux";
 
 let initialState = {
   theme: {
-    background: "#272823",
-    title: "#6495ed",
-    text: "#fff",
+    background: null,
+    title: null,
+    text: null,
   },
   favoriteTeam: {},
   dashtheme: {},

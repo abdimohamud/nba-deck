@@ -12,6 +12,7 @@ import {
 } from "../style";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import PlayerCard from "../components/PlayerCard";
 const Landing = () => {
   const { colors } = useSelector((state) => state.preferences);
   const [toggle, setToggle] = useState(null);
@@ -23,7 +24,7 @@ const Landing = () => {
     }
   };
   const decrease = () => {
-    if (toggle === 1 || toggle === null) {
+    if (toggle === 0 || toggle === null) {
       setToggle(29);
     } else {
       setToggle(toggle - 1);
@@ -108,7 +109,10 @@ const Landing = () => {
                     }`
                   : "rounded-lg shadow-lg"
               }
-            />
+            >
+             {toggle !== null
+                  ? <PlayerCard  player={colors[toggle].duo[0]}/>:""}
+            </Card>
             <Card
               className={
                 toggle !== null
@@ -117,7 +121,8 @@ const Landing = () => {
                     }`
                   : "rounded-lg shadow-lg"
               }
-            />
+            >    {toggle !== null
+                  ?<PlayerCard  player={colors[toggle].duo[1]}/> :""}</Card>
           </CardContainer>
           <NavLink to="/pick-a-team">
             <Button

@@ -24,7 +24,7 @@ const Dashboard = () => {
     ]
     const {id} = useParams()
     const dispatch =useDispatch();
-   console.log(teamRosters)
+
 
   useEffect(()=>{
     if (id && teamData.length>0){

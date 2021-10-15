@@ -14,6 +14,8 @@ export default function PlayerCard({ player }) {
     setIsOpen(!isOpen);
   }
   Modal.setAppElement("#root");
+  
+
   const { dashtheme } = useSelector((state) => state.preferences);
   let play = {
     name: "Jimmy Butler",
@@ -36,11 +38,18 @@ export default function PlayerCard({ player }) {
       fetchPlayerStats(player.pid)
         .then((res) => {
           setStats(res.data.data);
+          let playa ={...player,
+            pt:
+            Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
+            ast:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].ast)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
+            reb:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
+            tov:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),}
+            console.log(playa)
         })
         .catch((err) => console.log(err));
     }
   }, [player]);
-    console.log(stats)
+    
   return  (
     <div>
       <div
