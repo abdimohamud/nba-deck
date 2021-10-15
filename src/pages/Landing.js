@@ -17,7 +17,7 @@ const Landing = () => {
   const { colors } = useSelector((state) => state.preferences);
   const [toggle, setToggle] = useState(null);
   const increase = () => {
-    if (toggle === 29 || toggle === null) {
+    if (toggle === 29||toggle === null ) {
       setToggle(0);
     } else {
       setToggle(toggle + 1);
@@ -104,7 +104,7 @@ const Landing = () => {
             <Card
               className={
                 toggle !== null
-                  ? ` rounded-lg shadow-lg bg-${
+                  ? ` rounded-lg shadow-lg flex items-center bg-${
                       JSON.parse(colors[toggle].colors)[2].colorName
                     }`
                   : "rounded-lg shadow-lg"
@@ -116,7 +116,7 @@ const Landing = () => {
             <Card
               className={
                 toggle !== null
-                  ? ` rounded-lg shadow-lg bg-${
+                  ? ` rounded-lg shadow-lg flex items-center bg-${
                       JSON.parse(colors[toggle].colors)[2].colorName
                     }`
                   : "rounded-lg shadow-lg"
