@@ -1,0 +1,1831 @@
+[
+  {
+    "team": "Miami Heat",
+    "img": "/img/Heat_Logo.svg",
+    "pageName": "miami-heat-colors",
+    "colors": [
+      {
+        "colorName": "Miami-Heat-Red",
+        "HEX": "#98002E",
+        "RGB": "(152,0,46)",
+        "CMYK": "(0,100,61,43)",
+        "Pantone": "PMS 202 C"
+      },
+      {
+        "colorName": "Miami-Heat-Yellow",
+        "HEX": "#F9A01B",
+        "RGB": "(249,160,27)",
+        "CMYK": "(0,43,100,0)",
+        "Pantone": "PMS 137 C"
+      },
+      {
+        "colorName": "Miami-Heat-Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      }
+    ],
+    "abv": "MIA",
+    "duo": [
+      {
+        "fn": "Jimmy",
+        "ln": "Butler",
+        "pid": 202710,
+        "num": "22",
+        "pos": "F",
+        "dob": "1989-09-14",
+        "ht": "6-7",
+        "wt": 230,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Marquette/USA"
+      },
+      {
+        "fn": "Bam",
+        "ln": "Adebayo",
+        "pid": 1628389,
+        "num": "13",
+        "pos": "C-F",
+        "dob": "1997-07-18",
+        "ht": "6-9",
+        "wt": 255,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ]
+  },
+  {
+    "team": "Los Angeles Lakers",
+    "img": "/img/Los-Angeles-Lakers-logo.svg",
+    "pageName": "Los-Angeles-Lakers-colors",
+    "colors": [
+      {
+        "colorName": "Los-Angeles-Lakers-Purple",
+        "HEX": "#552583",
+        "RGB": "(85,37,130)",
+        "CMYK": "(79,100,0,12)",
+        "Pantone": "526"
+      },
+      {
+        "colorName": "Los-Angeles-Lakers-Gold",
+        "HEX": "#F9A01B",
+        "RGB": "(253,185,39)",
+        "CMYK": "(0,30,94,0)",
+        "Pantone": "123 C"
+      },
+      {
+        "colorName": "Los-Angeles-Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      }
+    ],
+    "abv": "LAL",
+    "duo": [
+      {
+        "fn": "LeBron",
+        "ln": "James",
+        "pid": 2544,
+        "num": "6",
+        "pos": "F",
+        "dob": "1984-12-30",
+        "ht": "6-9",
+        "wt": 250,
+        "y": 18,
+        "twc": "0",
+        "hcc": "St. Vincent-St. Mary HS (OH)/USA",
+        "pt": 25,
+        "ast": 7.8,
+        "reb": 7.7,
+        "tov": 3.7
+      },
+      {
+        "fn": "Anthony",
+        "ln": "Davis",
+        "pid": 203076,
+        "num": "3",
+        "pos": "F-C",
+        "dob": "1993-03-11",
+        "ht": "6-10",
+        "wt": 253,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Kentucky/USA",
+        "pt": 21.833333333333332,
+        "ast": 3.0555555555555554,
+        "reb": 7.9,
+        "tov": 2.1
+      }
+    ]
+  },
+  {
+    "team": "Boston Celtics",
+    "img": "/img/Boston-Celtics-logo.svg",
+    "pageName": "Boston-Celtics-colors",
+    "colors": [
+      {
+        "colorName": "Celtics-Green",
+        "HEX": "#007A33",
+        "RGB": "(0,122,51)",
+        "CMYK": "(100,0,91,27)",
+        "Pantone": "356 C"
+      },
+      {
+        "colorName": "Celtics-Gold",
+        "HEX": "#BA9653",
+        "RGB": "(139,111,78)",
+        "CMYK": "(30,40,80,0)",
+        "Pantone": "874 C"
+      },
+      {
+        "colorName": "Celtics-Brown",
+        "HEX": "#963821",
+        "RGB": "(150,56,33)",
+        "CMYK": "(40,95,100,0)",
+        "Pantone": "174 C"
+      }
+    ],
+    "abv": "BOS",
+    "duo": [
+      {
+        "fn": "Jaylen",
+        "ln": "Brown",
+        "pid": 1627759,
+        "num": "7",
+        "pos": "G-F",
+        "dob": "1996-10-24",
+        "ht": "6-6",
+        "wt": 223,
+        "y": 5,
+        "twc": "0",
+        "hcc": "California/USA",
+        "pt": 24.7,
+        "ast": 3.4,
+        "reb": 6,
+        "tov": 2.7
+      },
+      {
+        "fn": "Jayson",
+        "ln": "Tatum",
+        "pid": 1628369,
+        "num": "0",
+        "pos": "F-G",
+        "dob": "1998-03-03",
+        "ht": "6-8",
+        "wt": 210,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Duke/USA",
+        "pt": 26.4,
+        "ast": 4.3,
+        "reb": 7.4,
+        "tov": 2.7
+      }
+    ]
+  },
+  {
+    "team": "Los Angeles Clippers",
+    "pageName": "Los-Angeles-Clippers-colors",
+    "img": "/img/Los-Angeles-Clippers-logos.svg",
+    "colors": [
+      {
+        "colorName": "Red",
+        "HEX": "#C8102E",
+        "RGB": "(200,16,46)",
+        "CMYK": "(2,100,85,6)",
+        "Pantone": "186"
+      },
+      {
+        "colorName": "Blue",
+        "HEX": "#1D428A",
+        "RGB": "(29,66,148)",
+        "CMYK": "(100,78,0,18)",
+        "Pantone": "7687"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "COOL GRAY 5"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(0,0,0)",
+        "CMYK": "(75,68,67,90)",
+        "HSB": "(204,100,0)"
+      }
+    ],
+    "abv": "LAC",
+    "duo": [
+      {
+        "fn": "Paul",
+        "ln": "George",
+        "pid": 202331,
+        "num": "13",
+        "pos": "F",
+        "dob": "1990-05-02",
+        "ht": "6-8",
+        "wt": 220,
+        "y": 11,
+        "twc": "0",
+        "hcc": "Fresno State/USA"
+      },
+      {
+        "fn": "Kawhi",
+        "ln": "Leonard",
+        "pid": 202695,
+        "num": "2",
+        "pos": "F",
+        "dob": "1991-06-29",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 10,
+        "twc": "0",
+        "hcc": "San Diego State/USA"
+      }
+    ]
+  },
+  {
+    "team": "Brooklyn Nets",
+    "img": "/img/Brooklyn-Nets-logo.svg",
+    "pageName": "Brooklyn-Nets-colors",
+    "colors": [
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(0,0,0)",
+        "CMYK": "(75,68,67,90)",
+        "Pantone": "BLACK"
+      },
+      {
+        "colorName": "White",
+        "HEX": "#FFFFFF",
+        "RGB": "(255,255,255)",
+        "CMYK": "(0,0,0,0)",
+        "Pantone": "WHITE"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "COOL GRAY 5"
+      }
+    ],
+    "abv": "BKN",
+    "duo": [
+      {
+        "fn": "Kevin",
+        "ln": "Durant",
+        "pid": 201142,
+        "num": "7",
+        "pos": "F",
+        "dob": "1988-09-29",
+        "ht": "6-10",
+        "wt": 240,
+        "y": 13,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA",
+        "pt": 26.9,
+        "ast": 5.6,
+        "reb": 7.1,
+        "tov": 3.4
+      },
+      {
+        "fn": "James",
+        "ln": "Harden",
+        "pid": 201935,
+        "num": "13",
+        "pos": "G",
+        "dob": "1989-08-26",
+        "ht": "6-5",
+        "wt": 220,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Arizona State/USA",
+        "pt": 24.6,
+        "ast": 10.8,
+        "reb": 7.9,
+        "tov": 4
+      }
+    ]
+  },
+  {
+    "team": "Charlotte Hornets",
+    "img": "/img/Charlotte-Hornets-logo.svg",
+    "pageName": "Charlotte-Hornets-colors",
+    "colors": [
+      {
+        "colorName": "Hornets-Purple",
+        "HEX": "#1D1160",
+        "RGB": "(29,17,96)",
+        "CMYK": "(96,98,38,44)",
+        "Pantone": "275 C"
+      },
+      {
+        "colorName": "Teal",
+        "HEX": "#00788C",
+        "RGB": "(0,120,140)",
+        "CMYK": "(100,38,39,7)",
+        "Pantone": "3145 C"
+      },
+      {
+        "colorName": "Gray",
+        "HEX": "#A1A1A4",
+        "RGB": "(161,161,164)",
+        "CMYK": "(0,1,0,43)",
+        "Pantone": "COOL GRAY 8 C"
+      }
+    ],
+    "abv": "CHA",
+    "duo": [
+      {
+        "fn": "Terry",
+        "ln": "Rozier",
+        "pid": 1626179,
+        "num": "3",
+        "pos": "G",
+        "dob": "1994-03-17",
+        "ht": "6-1",
+        "wt": 190,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Louisville/USA",
+        "pt": 20.4,
+        "ast": 4.2,
+        "reb": 4.4,
+        "tov": 1.9
+      },
+      {
+        "fn": "Gordon",
+        "ln": "Hayward",
+        "pid": 202330,
+        "num": "20",
+        "pos": "F",
+        "dob": "1990-03-23",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 11,
+        "twc": "0",
+        "hcc": "Butler/USA",
+        "pt": 19.6,
+        "ast": 4.1,
+        "reb": 5.9,
+        "tov": 2.1
+      }
+    ]
+  },
+  {
+    "team": "Chicago Bulls",
+    "img": "/img/Chicago-Bulls-logo.svg",
+    "pageName": "Chicago-Bulls-colors",
+    "colors": [
+      {
+        "colorName": "Bulls-Red",
+        "HEX": "#CE1141",
+        "RGB": "(206,17,65)",
+        "CMYK": "(0,100,65,15)",
+        "Pantone": "200 C"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(0,0,0)",
+        "CMYK": "(75,68,67,90)",
+        "Pantone": "BLACK"
+      },
+      {
+        "colorName": "White",
+        "HEX": "#FFFFFF",
+        "RGB": "(255,255,255)",
+        "CMYK": "(0,0,0,0)",
+        "Pantone": "WHITE"
+      }
+    ],
+    "abv": "CHI",
+    "duo": [
+      {
+        "fn": "Zach",
+        "ln": "LaVine",
+        "pid": 203897,
+        "num": "8",
+        "pos": "G-F",
+        "dob": "1995-03-10",
+        "ht": "6-5",
+        "wt": 200,
+        "y": 7,
+        "twc": "0",
+        "hcc": "UCLA/USA",
+        "pt": 27.4,
+        "ast": 4.9,
+        "reb": 5,
+        "tov": 3.5
+      },
+      {
+        "fn": "Nikola",
+        "ln": "Vucevic",
+        "pid": 202696,
+        "num": "9",
+        "pos": "C",
+        "dob": "1990-10-24",
+        "ht": "6-11",
+        "wt": 260,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Southern California/Montenegro",
+        "pt": 23.4,
+        "ast": 3.8,
+        "reb": 11.7,
+        "tov": 1.8
+      }
+    ]
+  },
+  {
+    "team": "Atlanta Hawks",
+    "img": "/img/Atlanta-Hawks-Logo.svg",
+    "pageName": "Atlanta-Hawks-colors",
+    "colors": [
+      {
+        "colorName": "Hawks-Red",
+        "HEX": "#E03A3E",
+        "RGB": "(225,68,52)",
+        "CMYK": "(0,91,76,6)",
+        "Pantone": "186 C"
+      },
+      {
+        "colorName": "Volt-Green",
+        "HEX": "#C1D32F",
+        "RGB": "(196,214,0)",
+        "CMYK": "(29,2,100,0)",
+        "Pantone": "PMS 382"
+      },
+      {
+        "colorName": "Hawks-Charcoal",
+        "HEX": "#26282A",
+        "RGB": "(38,40,42)",
+        "CMYK": "(73,65,62,67)",
+        "Pantone": "PMS 426"
+      }
+    ],
+    "abv": "ATL",
+    "duo": [
+      {
+        "fn": "John",
+        "ln": "Collins",
+        "pid": 1628381,
+        "num": "20",
+        "pos": "F-C",
+        "dob": "1997-09-23",
+        "ht": "6-9",
+        "wt": 235,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Wake Forest/USA",
+        "pt": 17.6,
+        "ast": 1.2,
+        "reb": 7.4,
+        "tov": 1.3
+      },
+      {
+        "fn": "Trae",
+        "ln": "Young",
+        "pid": 1629027,
+        "num": "11",
+        "pos": "G",
+        "dob": "1998-09-19",
+        "ht": "6-1",
+        "wt": 180,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Oklahoma/USA",
+        "pt": 25.3,
+        "ast": 9.4,
+        "reb": 3.9,
+        "tov": 4.1
+      }
+    ]
+  },
+  {
+    "team": "Phoenix Suns",
+    "pageName": "phoenix-suns-colors",
+    "img": "/img/Phoenix Suns.svg",
+    "colors": [
+      {
+        "colorName": "Phoenix-Suns-purple",
+        "HEX": "#1d1160",
+        "RGB": "(29,17,96)",
+        "CMYK": "(98,100,0,43)",
+        "Pantone": "PMS 275"
+      },
+      {
+        "colorName": "Phoenix-Suns-orange",
+        "HEX": "#E56020",
+        "RGB": "(229,95,32)",
+        "CMYK": "(0,75,100,5)",
+        "Pantone": "PMS 159"
+      },
+      {
+        "colorName": "Phoenix-Suns-black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      },
+      {
+        "colorName": "Phoenix-Suns-gray",
+        "HEX": "#63727A",
+        "RGB": "(99,113,122)",
+        "CMYK": "(15,0,0,65)",
+        "Pantone": "PMS 431"
+      },
+      {
+        "colorName": "Phoenix-Suns-yellow",
+        "HEX": "#000000",
+        "RGB": "(249,160,27)",
+        "CMYK": "(0,43,100,0)",
+        "Pantone": "PMS 137"
+      },
+      {
+        "colorName": "Phoenix-Suns-dark-orange",
+        "HEX": "#B95915",
+        "RGB": "(185,89,21)",
+        "CMYK": "(0,67,100,28)",
+        "Pantone": "PMS 1675"
+      },
+      {
+        "colorName": "Phoenix-Suns-light-gray",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "PMS COOL GRAY 5"
+      }
+    ],
+    "abv": "PHX",
+    "duo": [
+      {
+        "fn": "Chris",
+        "ln": "Paul",
+        "pid": 101108,
+        "num": "3",
+        "pos": "G",
+        "dob": "1985-05-06",
+        "ht": "6-0",
+        "wt": 175,
+        "y": 16,
+        "twc": "0",
+        "hcc": "Wake Forest/USA"
+      },
+      {
+        "fn": "Devin",
+        "ln": "Booker",
+        "pid": 1626164,
+        "num": "1",
+        "pos": "G",
+        "dob": "1996-10-30",
+        "ht": "6-5",
+        "wt": 206,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ]
+  },
+  {
+    "team": "Dallas Mavericks",
+    "pageName": "Dallas-Mavericks-colors",
+    "img": "/img/Dallas-Mavericks-logo.svg",
+    "colors": [
+      {
+        "colorName": "Royal-blue",
+        "HEX": "#00538C",
+        "RGB": "(0,83,188)",
+        "CMYK": "(100,62,0,0)",
+        "Pantone": "PMS 2388"
+      },
+      {
+        "colorName": "Navy-blue",
+        "HEX": "#002B5e",
+        "RGB": "(0,43,92)",
+        "CMYK": "(100,64,0,60)",
+        "Pantone": "289 C"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#B8C4CA",
+        "RGB": "(187,196,202)",
+        "CMYK": "(5,25,0,0)",
+        "Pantone": "877 C"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK C"
+      }
+    ],
+    "abv": "DAL",
+    "duo": [
+      {
+        "fn": "Kristaps",
+        "ln": "Porzingis",
+        "pid": 204001,
+        "num": "6",
+        "pos": "F-C",
+        "dob": "1995-08-02",
+        "ht": "7-3",
+        "wt": 240,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Cajasol Sevilla/Latvia"
+      },
+      {
+        "fn": "Luka",
+        "ln": "Doncic",
+        "pid": 1629029,
+        "num": "77",
+        "pos": "F-G",
+        "dob": "1999-02-28",
+        "ht": "6-7",
+        "wt": 230,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Real Madrid/Slovenia"
+      }
+    ]
+  },
+  {
+    "team": "Denver Nuggets",
+    "pageName": "Denver-Nugget-colors",
+    "img": "/img/Denver-Nuggets-logo.svg",
+    "colors": [
+      {
+        "colorName": "Midnight-Blue",
+        "HEX": "#0E2240",
+        "RGB": "(13,34,64)",
+        "CMYK": "(100,76,12,70)",
+        "Pantone": "289"
+      },
+      {
+        "colorName": "Sunshine-Yellow",
+        "HEX": "#FEC524",
+        "RGB": "(255,198,39)",
+        "CMYK": "(0,24,91,0)",
+        "Pantone": "123"
+      },
+      {
+        "colorName": "Flatirons-Red",
+        "HEX": "#8B2131",
+        "RGB": "(139, 35, 50)",
+        "CMYK": "(29,96,76,29)",
+        "Pantone": "202"
+      },
+      {
+        "colorName": "Skyline-Blue",
+        "HEX": "#1D428A",
+        "RGB": "(29,66,138)",
+        "CMYK": "(100,86,15,3)",
+        "Pantone": "7687"
+      }
+    ],
+    "abv": "DEN",
+    "duo": [
+      {
+        "fn": "Nikola",
+        "ln": "Jokic",
+        "pid": 203999,
+        "num": "15",
+        "pos": "C",
+        "dob": "1995-02-19",
+        "ht": "6-11",
+        "wt": 284,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Mega Basket/Serbia"
+      },
+      {
+        "fn": "Jamal",
+        "ln": "Murray",
+        "pid": 1627750,
+        "num": "27",
+        "pos": "G",
+        "dob": "1997-02-23",
+        "ht": "6-3",
+        "wt": 215,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Kentucky/Canada"
+      }
+    ]
+  },
+  {
+    "team": "Detroit Pistons",
+    "pageName": "Detriot-Pistons-colors",
+    "img": "/img/Detriot-Pistons-logo.svg",
+    "colors": [
+      {
+        "colorName": "Red",
+        "HEX": "#C8102E",
+        "RGB": "(200,16,46)",
+        "CMYK": "(2,100,85,6)",
+        "Pantone": "186"
+      },
+      {
+        "colorName": "Royal",
+        "HEX": "#1D42BA",
+        "RGB": "(29,66,138)",
+        "CMYK": "(100,78,0,18)",
+        "Pantone": "7687"
+      },
+      {
+        "colorName": "Gray",
+        "HEX": "#BEC0C2",
+        "RGB": "(181,179,179)",
+        "CMYK": "(30,25,25,0)",
+        "Pantone": "PMS COOL GRAY 5"
+      },
+      {
+        "colorName": "Navy",
+        "HEX": "#002D62",
+        "RGB": "(0,45,98)",
+        "CMYK": "(100,68,0,54)",
+        "Pantone": "PMS 282"
+      }
+    ],
+    "abv": "DET",
+    "duo": []
+  },
+  {
+    "team": "Golden State Warriors",
+    "pageName": "Golden-State-Warriors-colors",
+    "img": "/img/Golden-State-Warriors-logo.svg",
+    "colors": [
+      {
+        "colorName": "Warriors-Blue",
+        "HEX": "#1D428A",
+        "RGB": "(29,66,138)",
+        "CMYK": "(100 78 0 18)",
+        "Pantone": "7687 C"
+      },
+      {
+        "colorName": "Golden-yellow",
+        "HEX": "#FFC72C",
+        "RGB": "(255,199,44)",
+        "CMYK": "(0,19,89,0)",
+        "Pantone": "123"
+      },
+      {
+        "colorName": "White",
+        "HEX": "#FFFFFF",
+        "RGB": "(255,255,255)",
+        "CMYK": "(0,0,0,0)",
+        "Pantone": "WHITE"
+      }
+    ],
+    "abv": "GSW",
+    "duo": [
+      {
+        "fn": "Stephen",
+        "ln": "Curry",
+        "pid": 201939,
+        "num": "30",
+        "pos": "G",
+        "dob": "1988-03-14",
+        "ht": "6-3",
+        "wt": 185,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Davidson/USA"
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Wiggins",
+        "pid": 203952,
+        "num": "22",
+        "pos": "F",
+        "dob": "1995-02-23",
+        "ht": "6-7",
+        "wt": 197,
+        "y": 7,
+        "twc": "0",
+        "hcc": "Kansas/Canada"
+      }
+    ]
+  },
+  {
+    "team": "Houston Rockets",
+    "pageName": "Houston-Rockets-colors",
+    "img": "/img/Houston-Rockets-logo.svg",
+    "colors": [
+      {
+        "colorName": "Red",
+        "HEX": "#CE1141",
+        "RGB": "(206,17,65)",
+        "CMYK": "(0,100,65,15)",
+        "Pantone": "200"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#C4CED4",
+        "RGB": "(196,206,211)",
+        "CMYK": "(5,0,0,20)",
+        "Pantone": "877"
+      }
+    ],
+    "abv": "HOU",
+    "duo": [
+      {
+        "fn": "Christian",
+        "ln": "Wood",
+        "pid": 1626174,
+        "num": "35",
+        "pos": "F",
+        "dob": "1995-09-27",
+        "ht": "6-10",
+        "wt": 214,
+        "y": 5,
+        "twc": "0",
+        "hcc": "UNLV/USA"
+      }
+    ]
+  },
+  {
+    "team": "Indiana Pacers",
+    "pageName": "indiana-pacers-colors",
+    "img": "/img/Indiana-Pacers-logo.svg",
+    "colors": [
+      {
+        "colorName": "Pacers-blue",
+        "HEX": "#002D62",
+        "RGB": "(0,45,98)",
+        "CMYK": "(100,68,0,54)",
+        "Pantone": "282 C"
+      },
+      {
+        "colorName": "Yellow",
+        "HEX": "#FDBB30",
+        "RGB": "(253,187,48)",
+        "CMYK": "(0,15,94,0)",
+        "Pantone": "123"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "COOL GRAY 5 C"
+      }
+    ],
+    "abv": "IND",
+    "duo": [
+      {
+        "fn": "T.J.",
+        "ln": "Warren",
+        "pid": 203933,
+        "num": "1",
+        "pos": "F",
+        "dob": "1993-09-05",
+        "ht": "6-8",
+        "wt": 220,
+        "y": 7,
+        "twc": "0",
+        "hcc": "North Carolina State/USA"
+      },
+      {
+        "fn": "Myles",
+        "ln": "Turner",
+        "pid": 1626167,
+        "num": "33",
+        "pos": "C-F",
+        "dob": "1996-03-24",
+        "ht": "6-11",
+        "wt": 250,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA"
+      }
+    ]
+  },
+  {
+    "team": "Memphis Grizzlies",
+    "pageName": "Memphis-Grizzlies-colors",
+    "img": "/img/Memphis-Grizzlies-logo.svg",
+    "colors": [
+      {
+        "colorName": "Blue",
+        "HEX": "#5D76A9",
+        "RGB": "(93,118,169)",
+        "CMYK": "(64,38,7,2)",
+        "Pantone": "652"
+      },
+      {
+        "colorName": "Navy",
+        "HEX": "#12173F",
+        "RGB": "(18,23,63)",
+        "CMYK": "(100,84,45,50)",
+        "Pantone": "PMS 289"
+      },
+      {
+        "colorName": "Yellow",
+        "HEX": "#F5B112",
+        "RGB": "(255,187,34)",
+        "CMYK": "(0,23,91,0)",
+        "Pantone": "123"
+      },
+      {
+        "colorName": "Gray",
+        "HEX": "#707271",
+        "RGB": "(112,114,113)",
+        "CMYK": "(30,20,19,58)",
+        "Pantone": "424"
+      }
+    ],
+    "abv": "MEM",
+    "duo": [
+      {
+        "fn": "Ja",
+        "ln": "Morant",
+        "pid": 1629630,
+        "num": "12",
+        "pos": "G",
+        "dob": "1999-08-10",
+        "ht": "6-3",
+        "wt": 174,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Murray State/USA"
+      },
+      {
+        "fn": "Dillon",
+        "ln": "Brooks",
+        "pid": 1628415,
+        "num": "24",
+        "pos": "G-F",
+        "dob": "1996-01-22",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Oregon/Canada"
+      }
+    ]
+  },
+  {
+    "team": "Milwaukee Bucks",
+    "pageName": "Milwaukee-Bucks-colors",
+    "img": "/img/Milwaukee-Bucks-logo.svg",
+    "colors": [
+      {
+        "colorName": "Good-land-green",
+        "HEX": "#00471B",
+        "RGB": "(0,71,27)",
+        "CMYK": "(80,0,90,75)",
+        "Pantone": "PMS 350 C"
+      },
+      {
+        "colorName": "Cream-city-cream",
+        "HEX": "#EEE1C6",
+        "RGB": "(240,235,210)",
+        "CMYK": "(6,9,23,0)",
+        "Pantone": "PMS 468 C"
+      },
+      {
+        "colorName": "Great-lakes-blue",
+        "HEX": "#0077C0",
+        "RGB": "(0,125,197)",
+        "CMYK": "(100,40,0,0)",
+        "Pantone": "2935"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(20,20,20,100)"
+      }
+    ],
+    "abv": "MIL",
+    "duo": [
+      {
+        "fn": "Giannis",
+        "ln": "Antetokounmpo",
+        "pid": 203507,
+        "num": "34",
+        "pos": "F",
+        "dob": "1994-12-06",
+        "ht": "6-11",
+        "wt": 242,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Filathlitikos/Greece"
+      },
+      {
+        "fn": "Khris",
+        "ln": "Middleton",
+        "pid": 203114,
+        "num": "22",
+        "pos": "F",
+        "dob": "1991-08-12",
+        "ht": "6-7",
+        "wt": 222,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Texas A&M/USA"
+      }
+    ]
+  },
+  {
+    "team": "Minnesota Timberwolves",
+    "pageName": "Minnesota-Timberwolves-colors",
+    "img": "/img/Minnesota-Timberwolves-logo.svg",
+    "colors": [
+      {
+        "colorName": "Midnight-blue",
+        "HEX": "#0C2340",
+        "RGB": "(12,35,64)",
+        "CMYK": "(100,76,12,70)",
+        "Pantone": "289"
+      },
+      {
+        "colorName": "Lake-blue",
+        "HEX": "#236192",
+        "RGB": "(35,97,146)",
+        "CMYK": "(96,54,5,27)",
+        "Pantone": "647"
+      },
+      {
+        "colorName": "Moonlight-grey",
+        "HEX": "#9EA2A2",
+        "RGB": "(158,162,162)",
+        "CMYK": "(19,12,13,34)",
+        "Pantone": "PMS 422"
+      },
+      {
+        "colorName": "Aurora-green",
+        "HEX": "#78BE20",
+        "RGB": "(120,190,32)",
+        "CMYK": "(65,0,100,0)",
+        "Pantone": "368"
+      }
+    ],
+    "abv": "MIN",
+    "duo": [
+      {
+        "fn": "Karl-Anthony",
+        "ln": "Towns",
+        "pid": 1626157,
+        "num": "32",
+        "pos": "C-F",
+        "dob": "1995-11-15",
+        "ht": "6-11",
+        "wt": 248,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      },
+      {
+        "fn": "D'Angelo",
+        "ln": "Russell",
+        "pid": 1626156,
+        "num": "0",
+        "pos": "G",
+        "dob": "1996-02-23",
+        "ht": "6-4",
+        "wt": 193,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Ohio State/USA"
+      }
+    ]
+  },
+  {
+    "team": "New Orleans Pelicans",
+    "pageName": "New-Orleans-Pelicans-colors",
+    "img": "/img/New-Orleans-Pelicans-logo.svg",
+    "colors": [
+      {
+        "colorName": "Pelicans-navy",
+        "HEX": "#0C2340",
+        "RGB": "(0,22,65)",
+        "CMYK": "(100,76,12,70)",
+        "Pantone": "289 C"
+      },
+      {
+        "colorName": "Pelicans-red",
+        "HEX": "#C8102E",
+        "RGB": "(225,58,62)",
+        "CMYK": "(0,91,76,6)",
+        "Pantone": "186"
+      },
+      {
+        "colorName": "Pelicans-gold",
+        "HEX": "#85714D",
+        "RGB": "(180,151,90)",
+        "CMYK": "(40,48,76,16)",
+        "Pantone": "872"
+      }
+    ],
+    "abv": "NOP",
+    "duo": [
+      {
+        "fn": "Brandon",
+        "ln": "Ingram",
+        "pid": 1627742,
+        "num": "14",
+        "pos": "F",
+        "dob": "1997-09-02",
+        "ht": "6-8",
+        "wt": 190,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Duke/USA"
+      },
+      {
+        "fn": "Zion",
+        "ln": "Williamson",
+        "pid": 1629627,
+        "num": "1",
+        "pos": "F",
+        "dob": "2000-07-06",
+        "ht": "6-7",
+        "wt": 284,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Duke/USA"
+      }
+    ]
+  },
+  {
+    "team": "New York Knicks",
+    "pageName": "New-York-Knicks-colors",
+    "img": "/img/New-York-Knicks-logo.svg",
+    "colors": [
+      {
+        "colorName": "Knicks-blue",
+        "HEX": "#006BB6",
+        "RGB": "(0,107,182)",
+        "CMYK": "(100,56,0,0)",
+        "Pantone": "293 C"
+      },
+      {
+        "colorName": "Knicks-orange",
+        "HEX": "#F58426",
+        "RGB": "(245,132,38)",
+        "CMYK": "(0,59,96,0)",
+        "Pantone": "165 C"
+      },
+      {
+        "colorName": "Knicks-silver",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "COOL GRAY 5"
+      },
+      {
+        "colorName": "Knicks-black",
+        "HEX": "#000000",
+        "RGB": "(35,31,32)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      }
+    ],
+    "abv": "NYK",
+    "duo": [
+      {
+        "fn": "Julius",
+        "ln": "Randle",
+        "pid": 203944,
+        "num": "30",
+        "pos": "F-C",
+        "dob": "1994-11-29",
+        "ht": "6-8",
+        "wt": 250,
+        "y": 7,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      },
+      {
+        "fn": "Derrick",
+        "ln": "Rose",
+        "pid": 201565,
+        "num": "4",
+        "pos": "G",
+        "dob": "1988-10-04",
+        "ht": "6-2",
+        "wt": 200,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Memphis/USA"
+      }
+    ]
+  },
+  {
+    "team": "Oklahoma City Thunder",
+    "pageName": "Oklahoma-City-Thunder-colors",
+    "img": "/img/Oklahoma-City-Thunder-logo.svg",
+    "colors": [
+      {
+        "colorName": "Thunder-blue",
+        "HEX": "#007AC1",
+        "RGB": "(0,125,195)",
+        "CMYK": "(89,43,0,0)",
+        "Pantone": "PMS 285 C"
+      },
+      {
+        "colorName": "Sunset",
+        "HEX": "#EF3B24",
+        "RGB": "(239,59,36)",
+        "CMYK": "(0,92,100,0)",
+        "Pantone": "PMS WARM RED C"
+      },
+      {
+        "colorName": "Blue",
+        "HEX": "#002D62",
+        "RGB": "(0,45,98)",
+        "CMYK": "(100,68,54,0)",
+        "Pantone": "PMS 282 C"
+      },
+      {
+        "colorName": "Yellow",
+        "HEX": "#FDBB30",
+        "RGB": "(253,187,48)",
+        "CMYK": "(0,29,91,0)",
+        "Pantone": "PMS 1235 C"
+      }
+    ],
+    "abv": "OKC",
+    "duo": [
+      {
+        "fn": "Shai",
+        "ln": "Gilgeous-Alexander",
+        "pid": 1628983,
+        "num": "2",
+        "pos": "G-F",
+        "dob": "1998-07-12",
+        "ht": "6-6",
+        "wt": 180,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Kentucky/Canada"
+      },
+      {
+        "fn": "Luguentz",
+        "ln": "Dort",
+        "pid": 1629652,
+        "num": "5",
+        "pos": "G",
+        "dob": "1999-04-19",
+        "ht": "6-3",
+        "wt": 215,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Arizona State/Canada"
+      }
+    ]
+  },
+  {
+    "team": "Orlando Magic",
+    "pageName": "Orlando-Magic-colors",
+    "img": "/img/Orlando-Magic-logo.svg",
+    "colors": [
+      {
+        "colorName": "Magic-blue",
+        "HEX": "#0077C0",
+        "RGB": "(0,125,197)",
+        "CMYK": "(100,45,0,0)",
+        "Pantone": "PMS 2935"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#C4CED4",
+        "RGB": "(196,206,211)",
+        "CMYK": "(5,0,0,25)",
+        "Pantone": "PMS 877"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(20,20,20,100)",
+        "Pantone": "PMS BLACK"
+      }
+    ],
+    "abv": "ORL",
+    "duo": [
+      {
+        "fn": "Mo",
+        "ln": "Bamba",
+        "pid": 1628964,
+        "num": "5",
+        "pos": "C",
+        "dob": "1998-05-12",
+        "ht": "7-0",
+        "wt": 231,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA"
+      },
+      {
+        "fn": "Cole",
+        "ln": "Anthony",
+        "pid": 1630175,
+        "num": "50",
+        "pos": "G",
+        "dob": "2000-05-15",
+        "ht": "6-2",
+        "wt": 185,
+        "y": 1,
+        "twc": "0",
+        "hcc": "North Carolina/USA"
+      }
+    ]
+  },
+  {
+    "team": "Philadelphia 76ers",
+    "pageName": "Philadelphia-76ers-colors",
+    "img": "/img/Philadelphia-76ers-logo.svg",
+    "colors": [
+      {
+        "colorName": "Blue",
+        "HEX": "#006BB6",
+        "RGB": "(0,107,182)",
+        "CMYK": "(100,56,0,0)",
+        "Pantone": "PMS 293"
+      },
+      {
+        "colorName": "Red",
+        "HEX": "#ED174C",
+        "RGB": "(237,23,76)",
+        "CMYK": "(0,100,65,0)",
+        "Pantone": "PMS 199"
+      },
+      {
+        "colorName": "Navy",
+        "HEX": "#002B5C",
+        "RGB": "(0,43,92)",
+        "CMYK": "(100,64,0,60)",
+        "Pantone": "PMS 289"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#C4CED4",
+        "RGB": "(196,206,211)",
+        "CMYK": "(5,0,0,20)",
+        "Pantone": "PMS 877"
+      }
+    ],
+    "abv": "PHI",
+    "duo": [
+      {
+        "fn": "Joel",
+        "ln": "Embiid",
+        "pid": 203954,
+        "num": "21",
+        "pos": "C-F",
+        "dob": "1994-03-16",
+        "ht": "7-0",
+        "wt": 280,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Kansas/Cameroon"
+      },
+      {
+        "fn": "Tobias",
+        "ln": "Harris",
+        "pid": 202699,
+        "num": "12",
+        "pos": "F",
+        "dob": "1992-07-15",
+        "ht": "6-8",
+        "wt": 226,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Tennessee/USA"
+      }
+    ]
+  },
+  {
+    "team": "Portland Trail Blazers",
+    "pageName": "Portland-Trailblazers-colors",
+    "img": "/img/Portland-Trailblazers-logo.svg",
+    "colors": [
+      {
+        "colorName": "Red",
+        "HEX": "#E03A3E",
+        "RGB": "(224,58,62)",
+        "CMYK": "(0,91,76,6)",
+        "Pantone": "PMS 186"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "PMS BLACK"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#BEC0C2",
+        "RGB": "(190,192,194)",
+        "CMYK": "(0,0,0,29)",
+        "Pantone": "COOL GRAY 5"
+      }
+    ],
+    "abv": "POR",
+    "duo": [
+      {
+        "fn": "Damian",
+        "ln": "Lillard",
+        "pid": 203081,
+        "num": "0",
+        "pos": "G",
+        "dob": "1990-07-15",
+        "ht": "6-2",
+        "wt": 195,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Weber State/USA"
+      },
+      {
+        "fn": "CJ",
+        "ln": "McCollum",
+        "pid": 203468,
+        "num": "3",
+        "pos": "G",
+        "dob": "1991-09-19",
+        "ht": "6-3",
+        "wt": 190,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Lehigh/USA"
+      }
+    ]
+  },
+  {
+    "team": "Sacramento Kings",
+    "pageName": "Sacremento-Kings-colors",
+    "img": "/img/Sacremento-Kings-logo.svg",
+    "colors": [
+      {
+        "colorName": "Purple",
+        "HEX": "#5A2D81",
+        "RGB": "(91,43,130)",
+        "CMYK": "(81,100,12,2)",
+        "Pantone": "PMS 268"
+      },
+      {
+        "colorName": "Gray",
+        "HEX": "#63727A",
+        "RGB": "(99,113,122)",
+        "CMYK": "(15,0,0,65)",
+        "Pantone": "PMS 431"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "PMS BLACK"
+      }
+    ],
+    "abv": "SAC",
+    "duo": [
+      {
+        "fn": "Buddy",
+        "ln": "Hield",
+        "pid": 1627741,
+        "num": "24",
+        "pos": "G",
+        "dob": "1992-12-17",
+        "ht": "6-4",
+        "wt": 220,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Oklahoma/Bahamas"
+      },
+      {
+        "fn": "De'Aaron",
+        "ln": "Fox",
+        "pid": 1628368,
+        "num": "5",
+        "pos": "G",
+        "dob": "1997-12-20",
+        "ht": "6-3",
+        "wt": 185,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ]
+  },
+  {
+    "team": "San Antonio Spurs",
+    "pageName": "San-Antonio-Spurs-colors",
+    "img": "/img/San-Antonio-logo.svg",
+    "colors": [
+      {
+        "colorName": "Silver",
+        "HEX": "#C4CED4",
+        "RGB": "(196,206,211)",
+        "CMYK": "(5,0,0,20)",
+        "Pantone": "877"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "PMS BLACK"
+      },
+      {
+        "colorName": "White",
+        "HEX": "#FFFFFF",
+        "RGB": "(255,255,255)",
+        "CMYK": "(0,0,0,0)",
+        "Pantone": "WHITE"
+      }
+    ],
+    "abv": "SAS",
+    "duo": [
+      {
+        "fn": "Dejounte",
+        "ln": "Murray",
+        "pid": 1627749,
+        "num": "5",
+        "pos": "G",
+        "dob": "1996-09-19",
+        "ht": "6-4",
+        "wt": 180,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Washington/USA"
+      },
+      {
+        "fn": "Derrick",
+        "ln": "White",
+        "pid": 1628401,
+        "num": "4",
+        "pos": "G",
+        "dob": "1994-07-02",
+        "ht": "6-4",
+        "wt": 190,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Colorado/USA"
+      }
+    ]
+  },
+  {
+    "team": "Toronto Raptors",
+    "pageName": "Toronto-Raptors-colors",
+    "img": "/img/Toronto-Raptors-logo.svg",
+    "colors": [
+      {
+        "colorName": "Red",
+        "HEX": "#CE1141",
+        "RGB": "(206,17,65)",
+        "CMYK": "(0,100,65,15)",
+        "Pantone": "PMS 200"
+      },
+      {
+        "colorName": "Black",
+        "HEX": "#000000",
+        "RGB": "(6,25,34)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "PMS BLACK"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#A1A1A4",
+        "RGB": "(161,161,164)",
+        "CMYK": "(0,1,0,43)",
+        "Pantone": "PMS COOL GRAY 8"
+      },
+      {
+        "colorName": "Gold",
+        "HEX": "#B4975A",
+        "RGB": "(180,151,90)",
+        "CMYK": "(20,30,70,15)",
+        "Pantone": "PMS 872"
+      }
+    ],
+    "abv": "TOR",
+    "duo": [
+      {
+        "fn": "Pascal",
+        "ln": "Siakam",
+        "pid": 1627783,
+        "num": "43",
+        "pos": "F",
+        "dob": "1994-04-02",
+        "ht": "6-9",
+        "wt": 230,
+        "y": 5,
+        "twc": "0",
+        "hcc": "New Mexico State/Cameroon"
+      },
+      {
+        "fn": "Fred",
+        "ln": "VanVleet",
+        "pid": 1627832,
+        "num": "23",
+        "pos": "G",
+        "dob": "1994-02-25",
+        "ht": "6-1",
+        "wt": 197,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Wichita State/USA"
+      }
+    ]
+  },
+  {
+    "team": "Utah Jazz",
+    "pageName": "Utah-Jazz-colors",
+    "img": "/img/Utah-Jazz-logo.svg",
+    "colors": [
+      {
+        "colorName": "Navy",
+        "HEX": "#002B5C",
+        "RGB": "(0,43,92)",
+        "CMYK": "(100,64,0,60)",
+        "Pantone": "PMS 289"
+      },
+      {
+        "colorName": "Green",
+        "HEX": "#00471B",
+        "RGB": "(0,71,27)",
+        "CMYK": "(80,0,90,75)",
+        "Pantone": "350"
+      },
+      {
+        "colorName": "Yellow",
+        "HEX": "#F9A01B",
+        "RGB": "(249,160,27)",
+        "CMYK": "(0,43,100,0)",
+        "Pantone": "137"
+      }
+    ],
+    "abv": "UTA",
+    "duo": [
+      {
+        "fn": "Rudy",
+        "ln": "Gobert",
+        "pid": 203497,
+        "num": "27",
+        "pos": "C",
+        "dob": "1992-06-26",
+        "ht": "7-1",
+        "wt": 258,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Cholet/France"
+      },
+      {
+        "fn": "Donovan",
+        "ln": "Mitchell",
+        "pid": 1628378,
+        "num": "45",
+        "pos": "G",
+        "dob": "1996-09-07",
+        "ht": "6-1",
+        "wt": 215,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Louisville/USA"
+      }
+    ]
+  },
+  {
+    "team": "Cleveland Cavaliers",
+    "pageName": "Cleveland-Cavaliers-colors",
+    "img": "/img/Cleveland-Cavaliers-logo.svg",
+    "colors": [
+      {
+        "colorName": "Cavaliers-wine",
+        "HEX": "#860038",
+        "RGB": "(134,0,56)",
+        "CMYK": "(0,100,34,53)",
+        "Pantone": "209 C"
+      },
+      {
+        "colorName": "Cavaliers-navy",
+        "HEX": "#041E42",
+        "RGB": "(4,30,66)",
+        "CMYK": "(100,90,13,68)",
+        "Pantone": "282 C"
+      },
+      {
+        "colorName": "Cavaliers-gold",
+        "HEX": "#FDBB30",
+        "RGB": "(253,187,48)",
+        "CMYK": "(0,29,91,0)",
+        "Pantone": "1235 C"
+      },
+      {
+        "colorName": "Cavaliers-black",
+        "HEX": "#000000",
+        "RGB": "(0,0,0)",
+        "CMYK": "(30,0,0,100)",
+        "Pantone": "BLACK"
+      }
+    ],
+    "abv": "CLE",
+    "duo": [
+      {
+        "fn": "Collin",
+        "ln": "Sexton",
+        "pid": 1629012,
+        "num": "2",
+        "pos": "G",
+        "dob": "1999-01-04",
+        "ht": "6-1",
+        "wt": 190,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Alabama/USA"
+      },
+      {
+        "fn": "Darius",
+        "ln": "Garland",
+        "pid": 1629636,
+        "num": "10",
+        "pos": "G",
+        "dob": "2000-01-26",
+        "ht": "6-1",
+        "wt": 192,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Vanderbilt/USA"
+      }
+    ]
+  },
+  {
+    "team": "Washington Wizards",
+    "pageName": "Washington-Wizards-color",
+    "img": "/img/Washington-Wizards-Logo.svg",
+    "colors": [
+      {
+        "colorName": "Navy-blue",
+        "HEX": "#002B5C",
+        "RGB": "(0,43,92)",
+        "CMYK": "(100,64,0,60)",
+        "Pantone": "PMS 289 C"
+      },
+      {
+        "colorName": "Red",
+        "HEX": "#E31837",
+        "RGB": "(227,24,55)",
+        "CMYK": "(0,100,81,4)",
+        "Pantone": "PMS 186 C"
+      },
+      {
+        "colorName": "Silver",
+        "HEX": "#C4CED4",
+        "RGB": "(196,206,212)",
+        "CMYK": "(5,0,0,20)",
+        "Pantone": "PMS 877"
+      }
+    ],
+    "abv": "WAS",
+    "duo": [
+      {
+        "fn": "Bradley",
+        "ln": "Beal",
+        "pid": 203078,
+        "num": "3",
+        "pos": "G",
+        "dob": "1993-06-28",
+        "ht": "6-3",
+        "wt": 207,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Florida/USA"
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Bryant",
+        "pid": 1628418,
+        "num": "13",
+        "pos": "C-F",
+        "dob": "1997-07-31",
+        "ht": "6-10",
+        "wt": 248,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Indiana/USA"
+      }
+    ]
+  }
+]
