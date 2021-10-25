@@ -104,10 +104,10 @@ const Landing = () => {
             <Card
               className={
                 toggle !== null
-                  ? ` rounded-lg shadow-lg flex items-center bg-${
+                  ? ` rounded-lg flex items-center bg-${
                       JSON.parse(colors[toggle].colors)[2].colorName
                     }`
-                  : "rounded-lg shadow-lg"
+                  : "rounded-lg"
               }
             >
              {toggle !== null
@@ -116,10 +116,10 @@ const Landing = () => {
             <Card
               className={
                 toggle !== null
-                  ? ` rounded-lg shadow-lg flex items-center bg-${
+                  ? ` rounded-lg flex items-center bg-${
                       JSON.parse(colors[toggle].colors)[2].colorName
                     }`
-                  : "rounded-lg shadow-lg"
+                  : "rounded-lg"
               }
             >    {toggle !== null
                   ?<PlayerCard  player={colors[toggle].duo[1]}/> :""}</Card>

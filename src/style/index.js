@@ -58,8 +58,10 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 550px;
+  height: 700px;
   width: 400px;
+  display:flex;
+  justify-content:center;
 `;
 export const Button = styled.div`
   width: 189px;
