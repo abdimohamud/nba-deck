@@ -11,7 +11,7 @@ function PickATeam ({colors}){
     return (
         <div style={{textAlign:"center"}}>
                <Title style={{ fontSize: "90px" }}>Select Your Team</Title>
-          <div className="bg-gray-100 grid grid-cols-6">
+          <div className="bg-gray-100 grid grid-cols-6" style={{ marginRight:'auto', marginLeft:'auto'}}>
               
         {colors.length>0?colors.map((item, idx) =>(
             <TeamSelector
@@ -25,7 +25,7 @@ function PickATeam ({colors}){
               } rounded-lg m-3`}
           >
             <img
-              style={{ width: "100px", height: "100px" }}
+              style={{ width: "100px", height: "100px" ,  marginRight:'auto', marginLeft:'auto'}}
               id={item.team}
               src={item.img}
               alt={item.team}

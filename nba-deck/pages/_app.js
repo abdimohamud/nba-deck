@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState({primary:'#FFFFFF', secondary:'#000000', alt:'#000000'}) 
 
 const toggleTheme = (theme) => {
-  console.log(theme)
+  // console.log(theme)
      setTheme(theme) 
 }
   return <ThemeProvider theme={theme}>  <Head>

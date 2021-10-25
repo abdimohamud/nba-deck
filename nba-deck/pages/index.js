@@ -7,7 +7,7 @@ export default function Home({colors, theme, toggleTheme}) {
   const [toggle, setToggle] = useState(null);
   const [showLoader, setShowLoader] = useState(true);
 
-  console.log({colors, theme, toggleTheme, toggle})
+  // console.log({colors, theme, toggleTheme, toggle})
   
   const increase = () => {
     if (toggle === 29 || toggle === null) {
