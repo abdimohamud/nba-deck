@@ -1,66 +1,55 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import Loader from "react-loader-spinner";
-import { useSelector, useDispatch } from "react-redux";
 import { Title } from "../style";
+import TeamContext from "../context";
 const PickATeam = () => {
-  const dispatch = useDispatch();
-  const { favoriteTeam, colors } = useSelector((state) => state.preferences);
+  const { teams, favoriteTeam, setFavoriteTeam} = useContext(TeamContext);
 
   const handleFavTeam = (e) => {
-    const { id } = e.target;
-    let res = colors.filter((item) => item.team === id)[0];
-    const color = JSON.parse(res.colors).map((color) => {
-      return color.colorName;
-    });
-    let dashTheme = {
-      background: color[0],
-      title: color[1],
-      text: color[2] || "#fff",
-    };
-    dispatch({ type: "CHANGETEAM", payload: { ...res } });
-    dispatch({ type: "CHANGEDASHTHEME", payload: dashTheme });
+   
+    const { alt } = e.target;
+   
+    let res = teams.filter((item) => item.key === alt)[0];
+
+    setFavoriteTeam(res)
+   
   };
   return (
      (
       <div className="App">
         <Title style={{ fontSize: "90px" }}>Select Your Team</Title>
         <div className="bg-gray-100 grid grid-cols-6">
-          {colors? colors.map((item) => (
+          { teams.map((item) => (
             <div
               onClick={(e) => {
                 handleFavTeam(e);
               }}
-              id={item.team}
-              key={item.abv}
+              id={item.key}
+              
+              key={item.key}
               className={`bg-pink-100 p-1 hover:bg-${
-                JSON.parse(item.colors)[0].colorName
+                item.theme.primary
               } rounded-lg m-3`}
             >
               <img
                 style={{ width: "100px", height: "100px" }}
-                id={item.team}
-                src={item.img}
-                alt={item.img}
+                id={item.abv}
+                src={item.logo}
+                alt={item.key}
               />
             </div>
-          )):  <Loader
-          type="Puff"
-          color="#00BFFF"
-          height={100}
-          width={100}
-        />}
+          ))}
         </div>{" "}
-        {favoriteTeam.colors ? (
+        {favoriteTeam ? (
           <Link
-            to={`/team/${favoriteTeam.abv}`}
+            to={`/team/${favoriteTeam.key}`}
             style={{ width: "inherit", marginTop: "2.5%" }}
             className={`w-full text-center border border-transparent  font-large rounded-md text-white bg-${
-              JSON.parse(favoriteTeam.colors)[0].colorName
-            } hover:bg-${JSON.parse(favoriteTeam.colors)[1].colorName}`}
+              favoriteTeam.theme.secondary
+            } hover:bg-${favoriteTeam.theme.primary}`}
           >
             <div>
-              <Title style={{ fontSize: "30px" }}>{favoriteTeam.team}→</Title>{" "}
+              <Title style={{ fontSize: "30px" }}>{favoriteTeam.name}→</Title>{" "}
             </div>
           </Link>
         ) : (

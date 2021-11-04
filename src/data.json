@@ -1,0 +1,1209 @@
+[
+  {
+    "key": "MIA",
+    "duo": [
+      {
+        "fn": "Jimmy",
+        "ln": "Butler",
+        "pid": 202710,
+        "num": "22",
+        "pos": "F",
+        "dob": "1989-09-14",
+        "ht": "6-7",
+        "wt": 230,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Marquette/USA"
+      },
+      {
+        "fn": "Bam",
+        "ln": "Adebayo",
+        "pid": 1628389,
+        "num": "13",
+        "pos": "C-F",
+        "dob": "1997-07-18",
+        "ht": "6-9",
+        "wt": 255,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ],
+    "name": "Miami Heat",
+    "logo": "/img/Heat_Logo.svg",
+    "theme": {
+      "primary": "Miami-Heat-Red",
+      "secondary": "Miami-Heat-Yellow",
+      "alternative": "Miami-Heat-Black"
+    },
+    "short": "heat",
+    "youtube": "miamiheat"
+  },
+  {
+    "key": "LAL",
+    "duo": [
+      {
+        "fn": "LeBron",
+        "ln": "James",
+        "pid": 2544,
+        "num": "6",
+        "pos": "F",
+        "dob": "1984-12-30",
+        "ht": "6-9",
+        "wt": 250,
+        "y": 18,
+        "twc": "0",
+        "hcc": "St. Vincent-St. Mary HS (OH)/USA",
+        "pt": 25,
+        "ast": 7.8,
+        "reb": 7.7,
+        "tov": 3.7
+      },
+      {
+        "fn": "Anthony",
+        "ln": "Davis",
+        "pid": 203076,
+        "num": "3",
+        "pos": "F-C",
+        "dob": "1993-03-11",
+        "ht": "6-10",
+        "wt": 253,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Kentucky/USA",
+        "pt": 21.833333333333332,
+        "ast": 3.0555555555555554,
+        "reb": 7.9,
+        "tov": 2.1
+      }
+    ],
+    "name": "Los Angeles Lakers",
+    "logo": "/img/Los-Angeles-Lakers-logo.svg",
+    "theme": {
+      "primary": "Los-Angeles-Lakers-Purple",
+      "secondary": "Los-Angeles-Lakers-Gold",
+      "alternative": "Los-Angeles-Black"
+    },
+    "short": "lakers",
+    "youtube": "lakers"
+  },
+  {
+    "key": "BOS",
+    "duo": [
+      {
+        "fn": "Jaylen",
+        "ln": "Brown",
+        "pid": 1627759,
+        "num": "7",
+        "pos": "G-F",
+        "dob": "1996-10-24",
+        "ht": "6-6",
+        "wt": 223,
+        "y": 5,
+        "twc": "0",
+        "hcc": "California/USA",
+        "pt": 24.7,
+        "ast": 3.4,
+        "reb": 6,
+        "tov": 2.7
+      },
+      {
+        "fn": "Jayson",
+        "ln": "Tatum",
+        "pid": 1628369,
+        "num": "0",
+        "pos": "F-G",
+        "dob": "1998-03-03",
+        "ht": "6-8",
+        "wt": 210,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Duke/USA",
+        "pt": 26.4,
+        "ast": 4.3,
+        "reb": 7.4,
+        "tov": 2.7
+      }
+    ],
+    "name": "Boston Celtics",
+    "logo": "/img/Boston-Celtics-logo.svg",
+    "theme": {
+      "primary": "Celtics-Green",
+      "secondary": "Celtics-Gold",
+      "alternative": "Celtics-Brown"
+    },
+    "short": "celtics",
+    "youtube": "Celtics"
+  },
+  {
+    "key": "LAC",
+    "duo": [
+      {
+        "fn": "Paul",
+        "ln": "George",
+        "pid": 202331,
+        "num": "13",
+        "pos": "F",
+        "dob": "1990-05-02",
+        "ht": "6-8",
+        "wt": 220,
+        "y": 11,
+        "twc": "0",
+        "hcc": "Fresno State/USA"
+      },
+      {
+        "fn": "Kawhi",
+        "ln": "Leonard",
+        "pid": 202695,
+        "num": "2",
+        "pos": "F",
+        "dob": "1991-06-29",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 10,
+        "twc": "0",
+        "hcc": "San Diego State/USA"
+      }
+    ],
+    "name": "Los Angeles Clippers",
+    "logo": "/img/Los-Angeles-Clippers-logos.svg",
+    "theme": {
+      "primary": "Red",
+      "secondary": "Blue",
+      "alternative": "Silver"
+    },
+    "short": "clippers",
+    "youtube": "clippers"
+  },
+  {
+    "key": "BKN",
+    "duo": [
+      {
+        "fn": "Kevin",
+        "ln": "Durant",
+        "pid": 201142,
+        "num": "7",
+        "pos": "F",
+        "dob": "1988-09-29",
+        "ht": "6-10",
+        "wt": 240,
+        "y": 13,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA",
+        "pt": 26.9,
+        "ast": 5.6,
+        "reb": 7.1,
+        "tov": 3.4
+      },
+      {
+        "fn": "James",
+        "ln": "Harden",
+        "pid": 201935,
+        "num": "13",
+        "pos": "G",
+        "dob": "1989-08-26",
+        "ht": "6-5",
+        "wt": 220,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Arizona State/USA",
+        "pt": 24.6,
+        "ast": 10.8,
+        "reb": 7.9,
+        "tov": 4
+      }
+    ],
+    "name": "Brooklyn Nets",
+    "logo": "/img/Brooklyn-Nets-logo.svg",
+    "theme": {
+      "primary": "Black",
+      "secondary": "White",
+      "alternative": "Silver"
+    },
+    "short": "nets",
+    "youtube": "NBANets"
+  },
+  {
+    "key": "CHA",
+    "duo": [
+      {
+        "fn": "Terry",
+        "ln": "Rozier",
+        "pid": 1626179,
+        "num": "3",
+        "pos": "G",
+        "dob": "1994-03-17",
+        "ht": "6-1",
+        "wt": 190,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Louisville/USA",
+        "pt": 20.4,
+        "ast": 4.2,
+        "reb": 4.4,
+        "tov": 1.9
+      },
+      {
+        "fn": "Gordon",
+        "ln": "Hayward",
+        "pid": 202330,
+        "num": "20",
+        "pos": "F",
+        "dob": "1990-03-23",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 11,
+        "twc": "0",
+        "hcc": "Butler/USA",
+        "pt": 19.6,
+        "ast": 4.1,
+        "reb": 5.9,
+        "tov": 2.1
+      }
+    ],
+    "name": "Charlotte Hornets",
+    "logo": "/img/Charlotte-Hornets-logo.svg",
+    "theme": {
+      "primary": "Hornets-Purple",
+      "secondary": "Teal",
+      "alternative": "Gray"
+    },
+    "short": "hornets",
+    "youtube": "hornets"
+  },
+  {
+    "key": "CHI",
+    "duo": [
+      {
+        "fn": "Zach",
+        "ln": "LaVine",
+        "pid": 203897,
+        "num": "8",
+        "pos": "G-F",
+        "dob": "1995-03-10",
+        "ht": "6-5",
+        "wt": 200,
+        "y": 7,
+        "twc": "0",
+        "hcc": "UCLA/USA",
+        "pt": 27.4,
+        "ast": 4.9,
+        "reb": 5,
+        "tov": 3.5
+      },
+      {
+        "fn": "Nikola",
+        "ln": "Vucevic",
+        "pid": 202696,
+        "num": "9",
+        "pos": "C",
+        "dob": "1990-10-24",
+        "ht": "6-11",
+        "wt": 260,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Southern California/Montenegro",
+        "pt": 23.4,
+        "ast": 3.8,
+        "reb": 11.7,
+        "tov": 1.8
+      }
+    ],
+    "name": "Chicago Bulls",
+    "logo": "/img/Chicago-Bulls-logo.svg",
+    "theme": {
+      "primary": "Bulls-Red",
+      "secondary": "Black",
+      "alternative": "White"
+    },
+    "short": "bulls",
+    "youtube": "ChicagoBulls"
+  },
+  {
+    "key": "ATL",
+    "duo": [
+      {
+        "fn": "John",
+        "ln": "Collins",
+        "pid": 1628381,
+        "num": "20",
+        "pos": "F-C",
+        "dob": "1997-09-23",
+        "ht": "6-9",
+        "wt": 235,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Wake Forest/USA",
+        "pt": 17.6,
+        "ast": 1.2,
+        "reb": 7.4,
+        "tov": 1.3
+      },
+      {
+        "fn": "Trae",
+        "ln": "Young",
+        "pid": 1629027,
+        "num": "11",
+        "pos": "G",
+        "dob": "1998-09-19",
+        "ht": "6-1",
+        "wt": 180,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Oklahoma/USA",
+        "pt": 25.3,
+        "ast": 9.4,
+        "reb": 3.9,
+        "tov": 4.1
+      }
+    ],
+    "name": "Atlanta Hawks",
+    "logo": "/img/Atlanta-Hawks-Logo.svg",
+    "theme": {
+      "primary": "Hawks-Red",
+      "secondary": "Volt-Green",
+      "alternative": "Hawks-Charcoal"
+    },
+    "short": "hawks",
+    "youtube": "ATLHawks"
+  },
+  {
+    "key": "PHX",
+    "duo": [
+      {
+        "fn": "Chris",
+        "ln": "Paul",
+        "pid": 101108,
+        "num": "3",
+        "pos": "G",
+        "dob": "1985-05-06",
+        "ht": "6-0",
+        "wt": 175,
+        "y": 16,
+        "twc": "0",
+        "hcc": "Wake Forest/USA"
+      },
+      {
+        "fn": "Devin",
+        "ln": "Booker",
+        "pid": 1626164,
+        "num": "1",
+        "pos": "G",
+        "dob": "1996-10-30",
+        "ht": "6-5",
+        "wt": 206,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ],
+    "name": "Phoenix Suns",
+    "logo": "/img/Phoenix Suns.svg",
+    "theme": {
+      "primary": "Phoenix-Suns-purple",
+      "secondary": "Phoenix-Suns-orange",
+      "alternative": "Phoenix-Suns-black"
+    },
+    "short": "suns",
+    "youtube": "PhoenixSunsVideos"
+  },
+  {
+    "key": "DAL",
+    "duo": [
+      {
+        "fn": "Kristaps",
+        "ln": "Porzingis",
+        "pid": 204001,
+        "num": "6",
+        "pos": "F-C",
+        "dob": "1995-08-02",
+        "ht": "7-3",
+        "wt": 240,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Cajasol Sevilla/Latvia"
+      },
+      {
+        "fn": "Luka",
+        "ln": "Doncic",
+        "pid": 1629029,
+        "num": "77",
+        "pos": "F-G",
+        "dob": "1999-02-28",
+        "ht": "6-7",
+        "wt": 230,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Real Madrid/Slovenia"
+      }
+    ],
+    "name": "Dallas Mavericks",
+    "logo": "/img/Dallas-Mavericks-logo.svg",
+    "theme": {
+      "primary": "Royal-blue",
+      "secondary": "Navy-blue",
+      "alternative": "Silver"
+    },
+    "short": "mavericks",
+    "youtube": "mavericks"
+  },
+  {
+    "key": "DEN",
+    "duo": [
+      {
+        "fn": "Nikola",
+        "ln": "Jokic",
+        "pid": 203999,
+        "num": "15",
+        "pos": "C",
+        "dob": "1995-02-19",
+        "ht": "6-11",
+        "wt": 284,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Mega Basket/Serbia"
+      },
+      {
+        "fn": "Jamal",
+        "ln": "Murray",
+        "pid": 1627750,
+        "num": "27",
+        "pos": "G",
+        "dob": "1997-02-23",
+        "ht": "6-3",
+        "wt": 215,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Kentucky/Canada"
+      }
+    ],
+    "name": "Denver Nuggets",
+    "logo": "/img/Denver-Nuggets-logo.svg",
+    "theme": {
+      "primary": "Midnight-Blue",
+      "secondary": "Sunshine-Yellow",
+      "alternative": "Flatirons-Red"
+    },
+    "short": "nuggets",
+    "youtube": "NuggetsTV"
+  },
+  {
+    "key": "DET",
+    "duo": [],
+    "name": "Detroit Pistons",
+    "logo": "/img/Detriot-Pistons-logo.svg",
+    "theme": {
+      "primary": "Red",
+      "secondary": "Royal",
+      "alternative": "Gray"
+    },
+    "short": "pistons",
+    "youtube": "DetPistonsOfficial"
+  },
+  {
+    "key": "GSW",
+    "duo": [
+      {
+        "fn": "Stephen",
+        "ln": "Curry",
+        "pid": 201939,
+        "num": "30",
+        "pos": "G",
+        "dob": "1988-03-14",
+        "ht": "6-3",
+        "wt": 185,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Davidson/USA"
+      },
+      {
+        "fn": "Andrew",
+        "ln": "Wiggins",
+        "pid": 203952,
+        "num": "22",
+        "pos": "F",
+        "dob": "1995-02-23",
+        "ht": "6-7",
+        "wt": 197,
+        "y": 7,
+        "twc": "0",
+        "hcc": "Kansas/Canada"
+      }
+    ],
+    "name": "Golden State Warriors",
+    "logo": "/img/Golden-State-Warriors-logo.svg",
+    "theme": {
+      "primary": "Warriors-Blue",
+      "secondary": "Golden-yellow",
+      "alternative": "White"
+    },
+    "short": "warriors",
+    "youtube": "/warriors"
+  },
+  {
+    "key": "HOU",
+    "duo": [
+      {
+        "fn": "Christian",
+        "ln": "Wood",
+        "pid": 1626174,
+        "num": "35",
+        "pos": "F",
+        "dob": "1995-09-27",
+        "ht": "6-10",
+        "wt": 214,
+        "y": 5,
+        "twc": "0",
+        "hcc": "UNLV/USA"
+      }
+    ],
+    "name": "Houston Rockets",
+    "logo": "/img/Houston-Rockets-logo.svg",
+    "theme": {
+      "primary": "Red",
+      "secondary": "Black",
+      "alternative": "Silver"
+    },
+    "short": "rockets",
+    "youtube": "OfficialRockets"
+  },
+  {
+    "key": "IND",
+    "duo": [
+      {
+        "fn": "T.J.",
+        "ln": "Warren",
+        "pid": 203933,
+        "num": "1",
+        "pos": "F",
+        "dob": "1993-09-05",
+        "ht": "6-8",
+        "wt": 220,
+        "y": 7,
+        "twc": "0",
+        "hcc": "North Carolina State/USA"
+      },
+      {
+        "fn": "Myles",
+        "ln": "Turner",
+        "pid": 1626167,
+        "num": "33",
+        "pos": "C-F",
+        "dob": "1996-03-24",
+        "ht": "6-11",
+        "wt": 250,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA"
+      }
+    ],
+    "name": "Indiana Pacers",
+    "logo": "/img/Indiana-Pacers-logo.svg",
+    "theme": {
+      "primary": "Pacers-blue",
+      "secondary": "Yellow",
+      "alternative": "Silver"
+    },
+    "short": "pacers",
+    "youtube": "Pacers"
+  },
+  {
+    "key": "MEM",
+    "duo": [
+      {
+        "fn": "Ja",
+        "ln": "Morant",
+        "pid": 1629630,
+        "num": "12",
+        "pos": "G",
+        "dob": "1999-08-10",
+        "ht": "6-3",
+        "wt": 174,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Murray State/USA"
+      },
+      {
+        "fn": "Dillon",
+        "ln": "Brooks",
+        "pid": 1628415,
+        "num": "24",
+        "pos": "G-F",
+        "dob": "1996-01-22",
+        "ht": "6-7",
+        "wt": 225,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Oregon/Canada"
+      }
+    ],
+    "name": "Memphis Grizzlies",
+    "logo": "/img/Memphis-Grizzlies-logo.svg",
+    "theme": {
+      "primary": "Blue",
+      "secondary": "Navy",
+      "alternative": "Yellow"
+    },
+    "short": "grizzlies",
+    "youtube": "MemphisGrizzlies"
+  },
+  {
+    "key": "MIL",
+    "duo": [
+      {
+        "fn": "Giannis",
+        "ln": "Antetokounmpo",
+        "pid": 203507,
+        "num": "34",
+        "pos": "F",
+        "dob": "1994-12-06",
+        "ht": "6-11",
+        "wt": 242,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Filathlitikos/Greece"
+      },
+      {
+        "fn": "Khris",
+        "ln": "Middleton",
+        "pid": 203114,
+        "num": "22",
+        "pos": "F",
+        "dob": "1991-08-12",
+        "ht": "6-7",
+        "wt": 222,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Texas A&M/USA"
+      }
+    ],
+    "name": "Milwaukee Bucks",
+    "logo": "/img/Milwaukee-Bucks-logo.svg",
+    "theme": {
+      "primary": "Good-land-green",
+      "secondary": "Cream-city-cream",
+      "alternative": "Great-lakes-blue"
+    },
+    "short": "bucks",
+    "youtube": "bucksdotcom"
+  },
+  {
+    "key": "MIN",
+    "duo": [
+      {
+        "fn": "Karl-Anthony",
+        "ln": "Towns",
+        "pid": 1626157,
+        "num": "32",
+        "pos": "C-F",
+        "dob": "1995-11-15",
+        "ht": "6-11",
+        "wt": 248,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      },
+      {
+        "fn": "D'Angelo",
+        "ln": "Russell",
+        "pid": 1626156,
+        "num": "0",
+        "pos": "G",
+        "dob": "1996-02-23",
+        "ht": "6-4",
+        "wt": 193,
+        "y": 6,
+        "twc": "0",
+        "hcc": "Ohio State/USA"
+      }
+    ],
+    "name": "Minnesota Timberwolves",
+    "logo": "/img/Minnesota-Timberwolves-logo.svg",
+    "theme": {
+      "primary": "Midnight-blue",
+      "secondary": "Lake-blue",
+      "alternative": "Moonlight-grey"
+    },
+    "short": "timberwolves",
+    "youtube": "timberwolves"
+  },
+  {
+    "key": "NOP",
+    "duo": [
+      {
+        "fn": "Brandon",
+        "ln": "Ingram",
+        "pid": 1627742,
+        "num": "14",
+        "pos": "F",
+        "dob": "1997-09-02",
+        "ht": "6-8",
+        "wt": 190,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Duke/USA"
+      },
+      {
+        "fn": "Zion",
+        "ln": "Williamson",
+        "pid": 1629627,
+        "num": "1",
+        "pos": "F",
+        "dob": "2000-07-06",
+        "ht": "6-7",
+        "wt": 284,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Duke/USA"
+      }
+    ],
+    "name": "New Orleans Pelicans",
+    "logo": "/img/New-Orleans-Pelicans-logo.svg",
+    "theme": {
+      "primary": "Pelicans-navy",
+      "secondary": "Pelicans-red",
+      "alternative": "Pelicans-gold"
+    },
+    "short": "pelicans",
+    "youtube": "NBAHornets"
+  },
+  {
+    "key": "NYK",
+    "duo": [
+      {
+        "fn": "Julius",
+        "ln": "Randle",
+        "pid": 203944,
+        "num": "30",
+        "pos": "F-C",
+        "dob": "1994-11-29",
+        "ht": "6-8",
+        "wt": 250,
+        "y": 7,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      },
+      {
+        "fn": "Derrick",
+        "ln": "Rose",
+        "pid": 201565,
+        "num": "4",
+        "pos": "G",
+        "dob": "1988-10-04",
+        "ht": "6-2",
+        "wt": 200,
+        "y": 12,
+        "twc": "0",
+        "hcc": "Memphis/USA"
+      }
+    ],
+    "name": "New York Knicks",
+    "logo": "/img/New-York-Knicks-logo.svg",
+    "theme": {
+      "primary": "Knicks-blue",
+      "secondary": "Knicks-orange",
+      "alternative": "Knicks-silver"
+    },
+    "short": "knicks",
+    "youtube": "nyknicks"
+  },
+  {
+    "key": "OKC",
+    "duo": [
+      {
+        "fn": "Shai",
+        "ln": "Gilgeous-Alexander",
+        "pid": 1628983,
+        "num": "2",
+        "pos": "G-F",
+        "dob": "1998-07-12",
+        "ht": "6-6",
+        "wt": 180,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Kentucky/Canada"
+      },
+      {
+        "fn": "Luguentz",
+        "ln": "Dort",
+        "pid": 1629652,
+        "num": "5",
+        "pos": "G",
+        "dob": "1999-04-19",
+        "ht": "6-3",
+        "wt": 215,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Arizona State/Canada"
+      }
+    ],
+    "name": "Oklahoma City Thunder",
+    "logo": "/img/Oklahoma-City-Thunder-logo.svg",
+    "theme": {
+      "primary": "Thunder-blue",
+      "secondary": "Sunset",
+      "alternative": "Blue"
+    },
+    "short": "thunder",
+    "youtube": "OklahomaCityThunder"
+  },
+  {
+    "key": "ORL",
+    "duo": [
+      {
+        "fn": "Mo",
+        "ln": "Bamba",
+        "pid": 1628964,
+        "num": "5",
+        "pos": "C",
+        "dob": "1998-05-12",
+        "ht": "7-0",
+        "wt": 231,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Texas-Austin/USA"
+      },
+      {
+        "fn": "Cole",
+        "ln": "Anthony",
+        "pid": 1630175,
+        "num": "50",
+        "pos": "G",
+        "dob": "2000-05-15",
+        "ht": "6-2",
+        "wt": 185,
+        "y": 1,
+        "twc": "0",
+        "hcc": "North Carolina/USA"
+      }
+    ],
+    "name": "Orlando Magic",
+    "logo": "/img/Orlando-Magic-logo.svg",
+    "theme": {
+      "primary": "Magic-blue",
+      "secondary": "Silver",
+      "alternative": "Black"
+    },
+    "short": "magic",
+    "youtube": "NBAOrlandoMagic"
+  },
+  {
+    "key": "PHI",
+    "duo": [
+      {
+        "fn": "Joel",
+        "ln": "Embiid",
+        "pid": 203954,
+        "num": "21",
+        "pos": "C-F",
+        "dob": "1994-03-16",
+        "ht": "7-0",
+        "wt": 280,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Kansas/Cameroon"
+      },
+      {
+        "fn": "Tobias",
+        "ln": "Harris",
+        "pid": 202699,
+        "num": "12",
+        "pos": "F",
+        "dob": "1992-07-15",
+        "ht": "6-8",
+        "wt": 226,
+        "y": 10,
+        "twc": "0",
+        "hcc": "Tennessee/USA"
+      }
+    ],
+    "name": "Philadelphia 76ers",
+    "logo": "/img/Philadelphia-76ers-logo.svg",
+    "theme": {
+      "primary": "Blue",
+      "secondary": "Red",
+      "alternative": "Navy"
+    },
+    "short": "76ers",
+    "youtube": "philadelphia76ers"
+  },
+  {
+    "key": "POR",
+    "duo": [
+      {
+        "fn": "Damian",
+        "ln": "Lillard",
+        "pid": 203081,
+        "num": "0",
+        "pos": "G",
+        "dob": "1990-07-15",
+        "ht": "6-2",
+        "wt": 195,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Weber State/USA"
+      },
+      {
+        "fn": "CJ",
+        "ln": "McCollum",
+        "pid": 203468,
+        "num": "3",
+        "pos": "G",
+        "dob": "1991-09-19",
+        "ht": "6-3",
+        "wt": 190,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Lehigh/USA"
+      }
+    ],
+    "name": "Portland Trail Blazers",
+    "logo": "/img/Portland-Trailblazers-logo.svg",
+    "theme": {
+      "primary": "Red",
+      "secondary": "Black",
+      "alternative": "Silver"
+    },
+    "short": "trail blazers",
+    "youtube": "portlandtrailblazers"
+  },
+  {
+    "key": "SAC",
+    "duo": [
+      {
+        "fn": "Buddy",
+        "ln": "Hield",
+        "pid": 1627741,
+        "num": "24",
+        "pos": "G",
+        "dob": "1992-12-17",
+        "ht": "6-4",
+        "wt": 220,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Oklahoma/Bahamas"
+      },
+      {
+        "fn": "De'Aaron",
+        "ln": "Fox",
+        "pid": 1628368,
+        "num": "5",
+        "pos": "G",
+        "dob": "1997-12-20",
+        "ht": "6-3",
+        "wt": 185,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Kentucky/USA"
+      }
+    ],
+    "name": "Sacramento Kings",
+    "logo": "/img/Sacremento-Kings-logo.svg",
+    "theme": {
+      "primary": "Purple",
+      "secondary": "Gray",
+      "alternative": "Black"
+    },
+    "short": "kings",
+    "youtube": "acramentoKings"
+  },
+  {
+    "key": "SAS",
+    "duo": [
+      {
+        "fn": "Dejounte",
+        "ln": "Murray",
+        "pid": 1627749,
+        "num": "5",
+        "pos": "G",
+        "dob": "1996-09-19",
+        "ht": "6-4",
+        "wt": 180,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Washington/USA"
+      },
+      {
+        "fn": "Derrick",
+        "ln": "White",
+        "pid": 1628401,
+        "num": "4",
+        "pos": "G",
+        "dob": "1994-07-02",
+        "ht": "6-4",
+        "wt": 190,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Colorado/USA"
+      }
+    ],
+    "name": "San Antonio Spurs",
+    "logo": "/img/San-Antonio-logo.svg",
+    "theme": {
+      "primary": "Silver",
+      "secondary": "Black",
+      "alternative": "White"
+    },
+    "short": "spurs",
+    "youtube": "saspursvideos"
+  },
+  {
+    "key": "TOR",
+    "duo": [
+      {
+        "fn": "Pascal",
+        "ln": "Siakam",
+        "pid": 1627783,
+        "num": "43",
+        "pos": "F",
+        "dob": "1994-04-02",
+        "ht": "6-9",
+        "wt": 230,
+        "y": 5,
+        "twc": "0",
+        "hcc": "New Mexico State/Cameroon"
+      },
+      {
+        "fn": "Fred",
+        "ln": "VanVleet",
+        "pid": 1627832,
+        "num": "23",
+        "pos": "G",
+        "dob": "1994-02-25",
+        "ht": "6-1",
+        "wt": 197,
+        "y": 5,
+        "twc": "0",
+        "hcc": "Wichita State/USA"
+      }
+    ],
+    "name": "Toronto Raptors",
+    "logo": "/img/Toronto-Raptors-logo.svg",
+    "theme": {
+      "primary": "Red",
+      "secondary": "Black",
+      "alternative": "Silver"
+    },
+    "short": "raptors",
+    "youtube": "torontoraptors"
+  },
+  {
+    "key": "UTA",
+    "duo": [
+      {
+        "fn": "Rudy",
+        "ln": "Gobert",
+        "pid": 203497,
+        "num": "27",
+        "pos": "C",
+        "dob": "1992-06-26",
+        "ht": "7-1",
+        "wt": 258,
+        "y": 8,
+        "twc": "0",
+        "hcc": "Cholet/France"
+      },
+      {
+        "fn": "Donovan",
+        "ln": "Mitchell",
+        "pid": 1628378,
+        "num": "45",
+        "pos": "G",
+        "dob": "1996-09-07",
+        "ht": "6-1",
+        "wt": 215,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Louisville/USA"
+      }
+    ],
+    "name": "Utah Jazz",
+    "logo": "/img/Utah-Jazz-logo.svg",
+    "theme": {
+      "primary": "Navy",
+      "secondary": "Green",
+      "alternative": "Yellow"
+    },
+    "short": "jazz",
+    "youtube": "OfficialUtahJazz"
+  },
+  {
+    "key": "CLE",
+    "duo": [
+      {
+        "fn": "Collin",
+        "ln": "Sexton",
+        "pid": 1629012,
+        "num": "2",
+        "pos": "G",
+        "dob": "1999-01-04",
+        "ht": "6-1",
+        "wt": 190,
+        "y": 3,
+        "twc": "0",
+        "hcc": "Alabama/USA"
+      },
+      {
+        "fn": "Darius",
+        "ln": "Garland",
+        "pid": 1629636,
+        "num": "10",
+        "pos": "G",
+        "dob": "2000-01-26",
+        "ht": "6-1",
+        "wt": 192,
+        "y": 2,
+        "twc": "0",
+        "hcc": "Vanderbilt/USA"
+      }
+    ],
+    "name": "Cleveland Cavaliers",
+    "logo": "/img/Cleveland-Cavaliers-logo.svg",
+    "theme": {
+      "primary": "Cavaliers-wine",
+      "secondary": "Cavaliers-navy",
+      "alternative": "Cavaliers-gold"
+    },
+    "short": "cavaliers",
+    "youtube": "cavs"
+  },
+  {
+    "key": "WAS",
+    "duo": [
+      {
+        "fn": "Bradley",
+        "ln": "Beal",
+        "pid": 203078,
+        "num": "3",
+        "pos": "G",
+        "dob": "1993-06-28",
+        "ht": "6-3",
+        "wt": 207,
+        "y": 9,
+        "twc": "0",
+        "hcc": "Florida/USA"
+      },
+      {
+        "fn": "Thomas",
+        "ln": "Bryant",
+        "pid": 1628418,
+        "num": "13",
+        "pos": "C-F",
+        "dob": "1997-07-31",
+        "ht": "6-10",
+        "wt": 248,
+        "y": 4,
+        "twc": "0",
+        "hcc": "Indiana/USA"
+      }
+    ],
+    "name": "Washington Wizards",
+    "logo": "/img/Washington-Wizards-Logo.svg",
+    "theme": {
+      "primary": "Navy-blue",
+      "secondary": "Red",
+      "alternative": "Silver"
+    },
+    "short": "wizards",
+    "youtube": "UChvzoBPvORuNGtHTMzjUsIQ"
+  }]

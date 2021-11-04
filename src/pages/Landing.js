@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import {
   Button,
   ButtonText,
@@ -10,31 +10,40 @@ import {
   Mid,
   Title,
 } from "../style";
-import { useSelector } from "react-redux";
+
 import { NavLink } from "react-router-dom";
 import PlayerCard from "../components/PlayerCard";
+import TeamContext from '../context'
 const Landing = () => {
-  const { colors } = useSelector((state) => state.preferences);
   const [toggle, setToggle] = useState(null);
+  const { teams, favoriteTeam, setFavoriteTeam } = useContext(TeamContext)
   const increase = () => {
-    if (toggle === 29||toggle === null ) {
-      setToggle(0);
-    } else {
-      setToggle(toggle + 1);
+    if (toggle === 29) {
+      setToggle(null)
+    } 
+     else {
+      setToggle(toggle + 1)
     }
   };
   const decrease = () => {
-    if (toggle === 0 || toggle === null) {
-      setToggle(29);
+    if ( toggle === null) {
+      setToggle(29)
+    } else if (toggle === 1 || toggle === 0) {
+      setToggle(null)
     } else {
-      setToggle(toggle - 1);
+      setToggle(toggle - 1)
     }
   };
+  useEffect(() => {
+if(toggle){
+  setFavoriteTeam(teams[toggle])
+}
+  }, [toggle, teams, setFavoriteTeam])
   return (
     <div
       className={
         toggle !== null
-          ? `bg-${JSON.parse(colors[toggle].colors)[0].colorName}`
+          ? `bg-${teams[toggle].theme.primary}`
           : ""
       }
     >
@@ -43,7 +52,7 @@ const Landing = () => {
           <Title
             className={
               toggle !== null
-                ? ` text-${JSON.parse(colors[toggle].colors)[1].colorName}`
+                ? ` text-${teams[toggle].theme.secondary}`
                 : ""
             }
           >
@@ -72,8 +81,8 @@ const Landing = () => {
                 <span>
                   <img
                     style={{ width: "100px", height: "100px" }}
-                    src={colors[toggle].img}
-                    alt={colors[toggle].team}
+                    src={teams[toggle].logo}
+                    alt={teams[toggle].key}
                   />
                 </span>
               ) : (
@@ -101,37 +110,22 @@ const Landing = () => {
 
         <Mid>
           <CardContainer>
-            <Card
-              className={
-                toggle !== null
-                  ? ` rounded-lg flex items-center bg-${
-                      JSON.parse(colors[toggle].colors)[2].colorName
-                    }`
-                  : "rounded-lg"
-              }
-            >
+         
              {toggle !== null
-                  ? <PlayerCard  player={colors[toggle].duo[0]}/>:""}
-            </Card>
-            <Card
-              className={
-                toggle !== null
-                  ? ` rounded-lg flex items-center bg-${
-                      JSON.parse(colors[toggle].colors)[2].colorName
-                    }`
-                  : "rounded-lg"
-              }
-            >    {toggle !== null
-                  ?<PlayerCard  player={colors[toggle].duo[1]}/> :""}</Card>
+                  ? <PlayerCard  player={teams[toggle].duo[0].pid} dashtheme={teams[toggle].theme}/>:""}
+           = 
+            {toggle !== null
+                  ?<PlayerCard  player={teams[toggle].duo[1].pid} dashtheme={teams[toggle].theme}/> :""}
+               
           </CardContainer>
           <NavLink to="/pick-a-team">
             <Button
               className={
                 toggle !== null
                   ? ` rounded-lg shadow-lg bg-${
-                      JSON.parse(colors[toggle].colors)[2].colorName
+                      teams[toggle].theme.alt
                     }  hover:bg-${
-                      JSON.parse(colors[toggle].colors)[1].colorName
+                      teams[toggle].theme.secondary
                     }`
                   : "rounded-lg shadow-lg"
               }
@@ -140,12 +134,13 @@ const Landing = () => {
                 className={
                   toggle !== null
                     ? `text-${
-                        JSON.parse(colors[toggle].colors)[1].colorName
+                        teams[toggle].theme.secondary
                       } hover:text-${
-                        JSON.parse(colors[toggle].colors)[0].colorName
+                        teams[toggle].theme.primary
                       }`
                     : ""
                 }
+                onClick={setFavoriteTeam(null)}
               >
                 Ball in →
               </ButtonText>

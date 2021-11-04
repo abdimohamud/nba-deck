@@ -2,11 +2,11 @@ import "../index.css";
 import classNames from "classnames";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { fetchPlayerStats } from "../redux/actions";
+import { fetchPlayerStats } from "../hooks";
 import Loader from "react-loader-spinner";
 import Modal from "react-modal";
-import PlayerModal from "./PlayerModal";
-export default function PlayerCard({ player }) {
+// import PlayerModal from "./PlayerModal";
+export default function PlayerCard({ player, dashtheme }) {
   const [stats, setStats] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +16,6 @@ export default function PlayerCard({ player }) {
   Modal.setAppElement("#root");
   
 
-  const { dashtheme } = useSelector((state) => state.preferences);
   let play = {
     name: "Jimmy Butler",
     number: 22,
@@ -32,19 +31,22 @@ export default function PlayerCard({ player }) {
     text: "Miami-Heat-Black",
     title: "Miami-Heat-Yellow",
     }
- 
+
   useEffect(() => {
     if (player) {
-      fetchPlayerStats(player.pid)
+      fetchPlayerStats(player)
         .then((res) => {
-          setStats(res.data.data);
-          let playa ={...player,
+         
+          
+          let playa ={...player, pid:res.data.pl.pid, fn:res.data.pl.fn, ln:res.data.pl.ln,
             pt:
-            Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
-            ast:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].ast)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
-            reb:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),
-            tov:Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp).toFixed(1),}
-            console.log(playa)
+            Number(res.data.pl.ca.sa.slice(-1)[0].pts),
+            ast:Number(res.data.pl.ca.sa.slice(-1)[0].ast),
+            reb:Number(res.data.pl.ca.sa.slice(-1)[0].reb),
+            tov:Number(res.data.pl.ca.sa.slice(-1)[0].tov),}
+           
+
+          setStats(playa)
         })
         .catch((err) => console.log(err));
     }
@@ -55,66 +57,66 @@ export default function PlayerCard({ player }) {
       <div
         className={classNames(
           "card text-center shadow-2xl",
-          `bg-${dashtheme.background}`
+          `bg-${dashtheme.primary}`
         )}
         id="cardcont"
       >
         <h2
           className={classNames(
             "text-1xl font-bold card-title pt-4",
-            `text-${dashtheme.text}`
+            `text-${dashtheme.secondary}`
           )}
           style={{ fontSize: "28px" }}
         >
-          {`${player.fn.toString()} ${player.ln}`}
+          {stats?`${stats.fn.toString()} ${stats.ln}`:""}
         </h2>
 
         <figure className="">
-          <div className={classNames("", `bg-${dashtheme.title}`)} id="card">
-            <img
-              src={`https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${player["pid"]}.png`}
+          <div className={classNames("", `bg-${dashtheme.alternative}`)} id="card">
+            {stats?<img
+              src={`https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/${stats["pid"]}.png`}
               alt={play.name}
               className="rounded-xl"
-            />
+            />:""}
           </div>
         </figure>
         <div className="card-body">
           {/* <h2 className="card-title">{play.postion}for {play.team} </h2> */}
           <div className="shadow stats">
-            <div className={classNames("stat", `${theme.text}`)}>
+            <div className={classNames("stat", `${theme.secondary}`)}>
               <div className="stat-title">Points </div>
               <div className="stat-value">
                 {stats
-                  ?(Number(stats.pl.ct.st[stats.pl.ct.st.length-1].pts)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp)).toFixed(1)
+                  ?stats.pt
                   :"--"}
               </div>
             </div>
 
-            <div className={classNames("stat", `${theme.text}`)}>
+            <div className={classNames("stat", `${theme.secondary}`)}>
               <div className="stat-title">Assists</div>
               <div className="stat-value">
               {stats
-                  ?(Number(stats.pl.ct.st[stats.pl.ct.st.length-1].ast)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp)).toFixed(1)
+                  ?stats.ast
                   :"--"}
               </div>
             </div>
           </div>
 
           <div className="shadow stats ">
-            <div className={classNames("stat", `${theme.text}`)}>
+            <div className={classNames("stat", `${theme.secondary}`)}>
               <div className="stat-title">Total Rebounds </div>
               <div className="stat-value">
               {stats
-                  ?(Number(stats.pl.ct.st[stats.pl.ct.st.length-1].reb)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp)).toFixed(1)
+                  ?stats.reb
                   :"--"}
               </div>
             </div>
 
-            <div className={classNames("stat", `${theme.text}`)}>
+            <div className={classNames("stat", `${theme.secondary}`)}>
               <div className="stat-title">Turnovers</div>
               <div className="stat-value">
               {stats
-                  ?(Number(stats.pl.ct.st[stats.pl.ct.st.length-1].tov)/Number(stats.pl.ct.st[stats.pl.ct.st.length-1].gp)).toFixed(1)
+                  ?stats.tov
                   :"--"}
               </div>
             </div>
@@ -128,7 +130,7 @@ export default function PlayerCard({ player }) {
           {/* <div className="justify-center card-actions">
             <button className="btn btn-outline btn-accent" onClick={toggleModal}>More info</button>
           </div> */}
-          <Modal
+          {/* <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
         contentLabel="My dialog"
@@ -138,8 +140,8 @@ export default function PlayerCard({ player }) {
       >
         <PlayerModal player={player}/>
         {/* <div>My modal dialog.</div>
-        <button onClick={toggleModal}>Close modal</button> */}
-      </Modal>
+        <button onClick={toggleModal}>Close modal</button>
+      </Modal> */}
         </div>
       </div>
     </div>
