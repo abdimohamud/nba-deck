@@ -47,7 +47,7 @@ if(toggle){
           : ""
       }
     >
-      <Container style={{ justifyContent: "space-evenly" }}>
+      <Container >
         <Heading>
           <Title
             className={
@@ -113,7 +113,7 @@ if(toggle){
          
              {toggle !== null
                   ? <PlayerCard  player={teams[toggle].duo[0].pid} dashtheme={teams[toggle].theme}/>:""}
-           = 
+           
             {toggle !== null
                   ?<PlayerCard  player={teams[toggle].duo[1].pid} dashtheme={teams[toggle].theme}/> :""}
                
