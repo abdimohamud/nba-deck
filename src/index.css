@@ -109,3 +109,24 @@ code {
   height: 100px;
   width: 100px;
 }
+
+#bodyloader {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}

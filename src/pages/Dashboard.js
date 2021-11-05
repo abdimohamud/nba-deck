@@ -31,10 +31,7 @@ const Dashboard = () => {
       { width: 1200, itemsToShow: 4 }
     ]
     const {id} = useParams()
-    console.log(favoriteTeam)
-    
-    console.log(teamDetails)
-    console.log(teamInfo)
+
 
   useEffect(()=>{
     if (id ){
@@ -82,9 +79,9 @@ const Dashboard = () => {
     }
         
       },[id])
-      console.log(videos)
+      
       return   (
-    <div>
+    <>
       {showLoader? <TeamLoader img={favoriteTeam.logo} theme={favoriteTeam.theme}/>:
     <>
       <div className={classNames("p-20", `bg-${favoriteTeam.theme.primary}`)}>
@@ -275,7 +272,7 @@ const Dashboard = () => {
           </div>
           </>
 }
-    </div>
+    </>
   );
 };
 
