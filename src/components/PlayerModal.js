@@ -1,172 +1,96 @@
 import { useState } from "react";
-
-const Logs = ({ data }) => {
-  return (
-    <div class="overflow-x-auto">
-      <table class="table w-full">
-        <thead>
-          <tr>
-            <th>
-              <label>
-                <input type="checkbox" class="checkbox" />
-              </label>
-            </th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>
-              <label>
-                <input type="checkbox" class="checkbox" />
-              </label>
-            </th>
-            <td>
-              <div class="flex items-center space-x-3">
-                <div class="avatar">
-                  <div class="w-12 h-12 mask mask-squircle">
-                    <img
-                      src="/tailwind-css-component-profile-2@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
+import moment from 'moment'
+const Logs = () => {
+    const toDateString =(d) =>{
+      let day = new Date(d)
+      let res =moment(day).format('l');
+   
+      return res
+    }
+    return (
+      <div class="overflow-x-auto">
+        <table class="table w-full">
+          <thead>
+            <tr>
+              {/* <th>
+                <label>
+                  <input type="checkbox" class="checkbox" />
+                </label>
+              </th> */}
+              <th>Opponent</th>
+              <th>Date</th>
+             
+              <th>Result</th>
+              <th>MINs</th>
+              <th title="field goal percentage">FG</th>
+              <th>3P</th>
+              <th>FT</th>
+              <th>REB</th>
+              <th>AST</th>
+              <th>STL</th>
+              <th>BLK</th>
+              <th>TOV</th>
+              <th>PTS</th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            {data.pl.gls.glt[0].gl.map((game, idx)=>(
+              <tr key={idx}>
+              {/* <th>
+                <label>
+                  <input type="checkbox" class="checkbox" />
+                </label>
+              </th> */}
+              <td>
+                <div class="flex items-center space-x-3">
+                  <div class="avatar">
+                    <div class="w-12 h-12 mask mask-squircle">
+                      <img
+                        src="/tailwind-css-component-profile-2@56w.png"
+                        alt="Avatar Tailwind CSS Component"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-bold">
+                      {game.otc} {game.otn}
+                    </div>
+                    <div class="text-sm opacity-50">@ {game.gcode.slice(-3)}</div>
                   </div>
                 </div>
-                <div>
-                  <div class="font-bold">Hart Hagerty</div>
-                  <div class="text-sm opacity-50">United States</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              Zemlak, Daniel and Leannon
-              <br />
-              <span class="badge badge-outline badge-sm">
-                Desktop Support Technician
-              </span>
-            </td>
-            <td>Purple</td>
-            <th>
-              <button class="btn btn-ghost btn-xs">details</button>
-            </th>
-          </tr>
-          <tr>
-            <th>
-              <label>
-                <input type="checkbox" class="checkbox" />
-              </label>
-            </th>
-            <td>
-              <div class="flex items-center space-x-3">
-                <div class="avatar">
-                  <div class="w-12 h-12 mask mask-squircle">
-                    <img
-                      src="/tailwind-css-component-profile-3@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div class="font-bold">Brice Swyre</div>
-                  <div class="text-sm opacity-50">China</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              Carroll Group
-              <br />
-              <span class="badge badge-outline badge-sm">Tax Accountant</span>
-            </td>
-            <td>Red</td>
-            <th>
-              <button class="btn btn-ghost btn-xs">details</button>
-            </th>
-          </tr>
-          <tr>
-            <th>
-              <label>
-                <input type="checkbox" class="checkbox" />
-              </label>
-            </th>
-            <td>
-              <div class="flex items-center space-x-3">
-                <div class="avatar">
-                  <div class="w-12 h-12 mask mask-squircle">
-                    <img
-                      src="/tailwind-css-component-profile-4@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div class="font-bold">Marjy Ferencz</div>
-                  <div class="text-sm opacity-50">Russia</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              Rowe-Schoen
-              <br />
-              <span class="badge badge-outline badge-sm">
-                Office Assistant I
-              </span>
-            </td>
-            <td>Crimson</td>
-            <th>
-              <button class="btn btn-ghost btn-xs">details</button>
-            </th>
-          </tr>
-          <tr>
-            <th>
-              <label>
-                <input type="checkbox" class="checkbox" />
-              </label>
-            </th>
-            <td>
-              <div class="flex items-center space-x-3">
-                <div class="avatar">
-                  <div class="w-12 h-12 mask mask-squircle">
-                    <img
-                      src="/tailwind-css-component-profile-5@56w.png"
-                      alt="Avatar Tailwind CSS Component"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <div class="font-bold">Yancy Tear</div>
-                  <div class="text-sm opacity-50">Brazil</div>
-                </div>
-              </div>
-            </td>
-            <td>
-              Wyman-Ledner
-              <br />
-              <span class="badge badge-outline badge-sm">
-                Community Outreach Specialist
-              </span>
-            </td>
-            <td>Indigo</td>
-            <th>
-              <button class="btn btn-ghost btn-xs">details</button>
-            </th>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th></th>
-            <th>Name</th>
-            <th>Job</th>
-            <th>Favorite Color</th>
-            <th></th>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-  );
-};
-
+              </td>
+              <td>
+                {toDateString(game.gdte)}
+                <br />
+                {/* <span class="badge badge-outline badge-sm">
+                  Desktop Support Technician
+                </span> */}
+              </td>
+              <td>{game.res}</td>
+              <td>{game.min}</td>
+              <td>{game.fgm}/{game.fga}</td>
+              <td>{game.tpm}/{game.tpa}</td>
+              <td>{game.ftm}/{game.fta}</td>
+              <td>{game.reb}</td>
+              <td>{game.ast}</td>
+              <td>{game.stl}</td>
+              <td>{game.blk}</td>
+              <td>{game.tov}</td>
+              <td>{game.pts}</td>
+              {/* <th>
+                <button class="btn btn-ghost btn-xs">details</button>
+              </th> */}
+            </tr>
+            ))}
+            
+            
+          </tbody>
+          
+        </table>
+      </div>
+    );
+  };
 const Profile = ({ data }) => {
   return (
     <div class="flex justify-center">
