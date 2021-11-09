@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import {
   Button,
   ButtonText,
-  Card,
+
   CardContainer,
   Container,
   Emoji,
@@ -16,7 +16,7 @@ import PlayerCard from "../components/PlayerCard";
 import TeamContext from '../context'
 const Landing = () => {
   const [toggle, setToggle] = useState(null);
-  const { teams, favoriteTeam, setFavoriteTeam } = useContext(TeamContext)
+  const { teams,  setFavoriteTeam } = useContext(TeamContext)
   const increase = () => {
     if (toggle === 29) {
       setToggle(null)

@@ -17,6 +17,7 @@ const Dashboard = () => {
     const {favoriteTeam, teams, setFavoriteTeam, roster, setRoster, rssFeed, setRSSFeed, videos, setVideos } = useContext(TeamContext)
     const [teamDetails, setTeamDetails] = useState(null)
     const [teamInfo, setTeamInfo] = useState(null)
+    console.log(teamDetails, teamInfo)
     const breakPoints = [
       { width: 1, itemsToShow: 1 },
       { width: 550, itemsToShow: 2 },
@@ -39,7 +40,7 @@ const Dashboard = () => {
           
           
           
-          fetchTeamRoster(favoriteTeam.short).then(res =>{console.log(res.data["t"]["pl"].slice(0, 12)) ;setRoster(res.data)}).catch(err=>console.log(err))
+          fetchTeamRoster(favoriteTeam.short).then(res =>{ setRoster(res.data)}).catch(err=>console.log(err))
           fetchTeamDetails(favoriteTeam.key).then(res =>{ let team = res.data.data.filter(i=> i.key ===favoriteTeam.key)[0]; setTeamDetails(team)}).catch(err=>console.log(err))
           fetchTeamInfo(favoriteTeam.key).then(res => setTeamInfo(res.data.data)).catch(err=>console.log(err))  
           fetchTeamVideos(favoriteTeam.youtube).then(res => setVideos(res.data)).catch(err=>console.log(err))
@@ -79,7 +80,7 @@ const Dashboard = () => {
     <>
       <div className={classNames("p-20", `bg-${favoriteTeam.theme.primary}`)}>
       <div style={{marginBottom:'2%'}} onClick={(e)=>{e.preventDefault(); history.push('/pick-a-team'); setFavoriteTeam(null); setTeamDetails(null); setRoster(null); setVideos(null); setRSSFeed(null);}}><svg xmlns="http://www.w3.org/2000/svg" className={` h-24 w-24 stroke-current text-${favoriteTeam.theme.secondary} hover: bg-${favoriteTeam.theme.primary}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
 </svg>
 </div>
         <div className={classNames("bg-white p-6 rounded-lg shadow-lg flex justify-center items-center ",`bg-${favoriteTeam.theme.secondary}`)}>
@@ -93,14 +94,26 @@ const Dashboard = () => {
       />}</Title>   
    </div>
       </div>
-      <div className="card-body"><h2 className="my-4 text-4xl font-bold card-title text-center">The BreakDown</h2>  <p>{teamInfo?teamInfo.description: <Loader
+      <div className="card-body"><h2 className="my-4 text-4xl font-bold card-title text-center">The BreakDown</h2>  <p>{teamInfo?teamInfo[0].description: <Loader
         type="Puff"
         color="#00BFFF"
         height={100}
         width={100}
       />}</p> 
-      
+      <br/>
       <p>EST 🕛:{teamDetails?teamDetails["0"]["0"][0]["YEARFOUNDED"]: <Loader
+        type="Puff"
+        color="#00BFFF"
+        height={100}
+        width={100}
+      />} </p>
+         <p>OWNER 💰:{teamDetails?teamDetails["0"]["0"][0]["OWNER"]: <Loader
+        type="Puff"
+        color="#00BFFF"
+        height={100}
+        width={100}
+      />} </p>
+         <p>Head Coach 📋:{teamDetails?teamDetails["0"]["0"][0]["HEADCOACH"]: <Loader
         type="Puff"
         color="#00BFFF"
         height={100}
@@ -112,8 +125,8 @@ const Dashboard = () => {
         height={100}
         width={100}
       />}</p>
-      <p>Rings:🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆</p>
-      <p>All Time Record:  3427-2331</p>
+      <p className="flex">Championships:{teamDetails?teamDetails["3"]["0"].map((item, idx)=>{return (<div key={idx}>🏆</div>)}):0}</p>
+      {/* <p>All Time Record:  3427-2331</p> */}
       <div className="justify-end space-x-2 card-actions"> <a href={teamInfo?`https://www.${teamInfo.website}`:""} ><button className="btn">Learn More → </button> </a></div></div>
       <h2 className={classNames(" text-4xl text-center font-bold card-title",`bg-${favoriteTeam.theme.secondary} text-${favoriteTeam.theme.alternative}`)}>The Roster</h2>
     
@@ -157,22 +170,22 @@ const Dashboard = () => {
         <div className={classNames("heading text-center font-bold text-2xl m-5 flex justify-center items-center",`text-${favoriteTeam.theme.alternative}`)}>   <svg xmlns="http://www.w3.org/2000/svg" className={`fill-current text-${favoriteTeam.theme.alternative}`} width="72" height="72" viewBox="0 0 24 24"><path d="M7 15h13v1h-13v-1zm4-4v3h5v-3h-5zm-1 0h-3v1h3v-1zm-3 3h3v-1h-3v1zm13-1h-3v1h3v-1zm-6.951-6.573v-.396h-1.215v1.941h1.255v-.396h-.78v-.406h.698v-.393h-.698v-.35h.74zm1.396.261l.238 1.284h.5l.501-1.941h-.482l-.249 1.32-.238-1.32h-.492l-.27 1.345-.24-1.345h-.505l.46 1.941h.506l.271-1.284zm1.901.916c-.149 0-.324-.043-.466-.116l-.024-.013-.098.398.015.008c.102.058.318.119.547.119.581 0 .788-.328.788-.61 0-.272-.161-.458-.507-.586-.254-.096-.338-.145-.338-.247 0-.098.1-.161.254-.161.136 0 .266.03.388.088l.023.011.107-.39-.015-.007c-.145-.065-.311-.098-.495-.098-.442 0-.739.239-.739.593 0 .262.181.458.535.581.227.081.304.144.304.247 0 .117-.102.183-.279.183zm-5.325.368h.485v-1.941h-.438v1.189l-.641-1.189h-.535v1.941h.438v-1.327l.691 1.327zm8.979 1.028h-13v1h13v-1zm0 2h-3v1h3v-1zm-17-9v17.199c0 .771-1 .771-1 0v-15.199h-2v15.98c0 1.115.905 2.02 2.02 2.02h19.958c1.117 0 2.022-.904 2.022-2.02v-17.98h-21zm19 16h-17v-14h17v14z"/></svg> <br/>  News
           </div><div className="bg-white rounded-lg shadow-lg">
             <div className="p-6">
-            <div class="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300  overflow-y-scroll" style={{height:"37rem"}}>
+            <div className="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300  overflow-y-scroll" style={{height:"37rem"}}>
 
 
-<div class="h-64 bg-gray-400">
+<div className="h-64 bg-gray-400">
 {rssFeed?rssFeed.map((item, idx)=>(
-            <div class="bg-white overflow-hidden border-b-4 border-blue-500 " key={idx}>
-            <img src={item[item.length-2].name==="enclosure"?item[item.length-2].attributes.url.split("?")[0]:favoriteTeam.logo} class="w-full object-cover h-32 sm:h-48 md:h-64" alt="teamfeed"/>
-            <div class="p-4 md:p-6">
-              <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
-             <a href={item[1].value}> <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">{item[0].value}</h3></a>
-              <div class="text-sm flex items-center">
-                <svg class="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style={{enableBackground:"new 0 0 97.16 97.16"}} xmlSpace="preserve">
+            <div className="bg-white overflow-hidden border-b-4 border-blue-500 " key={idx}>
+            <img src={item[item.length-2].name==="enclosure"?item[item.length-2].attributes.url.split("?")[0]:favoriteTeam.logo} className="w-full object-cover h-32 sm:h-48 md:h-64" alt="teamfeed"/>
+            <div className="p-4 md:p-6">
+              <p className="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
+             <a href={item[1].value}> <h3 className="font-semibold mb-2 text-xl leading-tight sm:leading-normal">{item[0].value}</h3></a>
+              <div className="text-sm flex items-center">
+                <svg className="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style={{enableBackground:"new 0 0 97.16 97.16"}} xmlSpace="preserve">
                   <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
                   <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
                 </svg>
-                <p class="leading-none">{`${item[item.length-1].value.split(" ")[1]} ${item[item.length-1].value.split(" ")[2]} ${item[item.length-1].value.split(" ")[3]}`}</p>
+                <p className="leading-none">{`${item[item.length-1].value.split(" ")[1]} ${item[item.length-1].value.split(" ")[2]} ${item[item.length-1].value.split(" ")[3]}`}</p>
               </div>
             </div>
           </div>
@@ -226,29 +239,29 @@ const Dashboard = () => {
           { JSON.parse(videos).map((item, index) => (
                 <div
                   key={index}
-                  class="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative"
+                  className="each mb-10 m-2 shadow-lg border-gray-800 bg-gray-100 relative"
                 >
                   <img
-                    class="w-full"
+                    className="w-full"
                     src={item.videoThumbnails[3].url}
                     alt="vid"
                   />
-                  <div class="badge absolute top-0 right-0 bg-red-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">
+                  <div className="badge absolute top-0 right-0 bg-red-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">
                     {item.viewCountText}
                   </div>
 
-                  <div class="desc p-4 text-gray-800">
+                  <div className="desc p-4 text-gray-800">
                     <a
                       href={`https://www.youtube.com/watch?v=${item.videoId}`}
                       target="_new"
-                      class="title font-bold block cursor-pointer hover:underline"
+                      className="title font-bold block cursor-pointer hover:underline"
                     >
                       {item.title}
                     </a>
                     <a
                       href={`https://www.youtube.com/user/${item.authorId}`}
                       target="_new"
-                      class="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer"
+                      className="badge bg-indigo-500 text-blue-100 rounded px-1 text-xs font-bold cursor-pointer"
                     >
                       {item.author}
                     </a>

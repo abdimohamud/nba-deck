@@ -23,7 +23,7 @@ export const Title = styled.p`
   line-height: 1.2;
 `;
 
-export const Emoji = styled.p`
+export const Emoji = styled.div`
   width: auto;
   height: auto;
   overflow: visible;

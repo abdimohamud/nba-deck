@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import { useEffect, useState} from "react";
+import { useState} from "react";
 import nbateams from './data.json'
 import Landing from "./pages/Landing";
 import PickATeam from "./pages/PickATeam";

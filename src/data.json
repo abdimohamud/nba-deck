@@ -358,7 +358,7 @@
       }
     ],
     "name": "Atlanta Hawks",
-    "logo": "/img/Atlanta-Hawks-Logo.svg",
+    "logo": "/img/Atlanta-Hawks-logo.svg",
     "theme": {
       "primary": "Hawks-Red",
       "secondary": "Volt-Green",
@@ -1198,7 +1198,7 @@
       }
     ],
     "name": "Washington Wizards",
-    "logo": "/img/Washington-Wizards-Logo.svg",
+    "logo": "/img/Washington-Wizards-logo.svg",
     "theme": {
       "primary": "Navy-blue",
       "secondary": "Red",

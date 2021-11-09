@@ -138,8 +138,7 @@ export default function PlayerCard({ player, dashtheme }) {
         closeTimeoutMS={500}
       >
         <PlayerModal player={playerData}/>
-         <div>My modal dialog.</div>
-        <button onClick={toggleModal}>Close modal</button>
+         
       </Modal>
         </div>
       </div>
