@@ -1,12 +1,11 @@
 import "../index.css";
 import classNames from "classnames";
-import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchPlayerStats } from "../hooks";
-import Loader from "react-loader-spinner";
 import Modal from "react-modal";
-// import PlayerModal from "./PlayerModal";
+import PlayerModal from "./PlayerModal";
 export default function PlayerCard({ player, dashtheme }) {
+  const [playerData, setPlayerData] = useState(null)
   const [stats, setStats] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,7 +35,7 @@ export default function PlayerCard({ player, dashtheme }) {
     if (player) {
       fetchPlayerStats(player)
         .then((res) => {
-         
+         setPlayerData(res.data)
           
           let playa ={...player, pid:res.data.pl.pid, fn:res.data.pl.fn, ln:res.data.pl.ln,
             pt:
@@ -127,10 +126,10 @@ export default function PlayerCard({ player, dashtheme }) {
           sit necessitatibus veritatis sed molestiae voluptates incidunt iure
           sapiente.
         </p> */}
-          {/* <div className="justify-center card-actions">
+          <div className="justify-center card-actions">
             <button className="btn btn-outline btn-accent" onClick={toggleModal}>More info</button>
-          </div> */}
-          {/* <Modal
+          </div>
+          <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
         contentLabel="My dialog"
@@ -138,10 +137,10 @@ export default function PlayerCard({ player, dashtheme }) {
         overlayClassName="myoverlay"
         closeTimeoutMS={500}
       >
-        <PlayerModal player={player}/>
-        {/* <div>My modal dialog.</div>
+        <PlayerModal player={playerData}/>
+         <div>My modal dialog.</div>
         <button onClick={toggleModal}>Close modal</button>
-      </Modal> */}
+      </Modal>
         </div>
       </div>
     </div>

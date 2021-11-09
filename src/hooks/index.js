@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const fetchTeamRoster = (team) => {
-    return axios.get(`https://data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/${team}_roster.json`, {
+    return axios.get(`${process.env.REACT_APP_CORS_API}/data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/${team}_roster.json`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json"
@@ -10,7 +10,7 @@ export const fetchTeamRoster = (team) => {
   };
 
 export const fetchPlayerStats = (playerId) => {
-    return axios.get(`https://data.nba.com/data/v2015/json/mobile_teams/nba/2020/players/playercard_${playerId}_02.json`, {
+    return axios.get(`${process.env.REACT_APP_CORS_API}/data.nba.com/data/v2015/json/mobile_teams/nba/2021/players/playercard_${playerId}_02.json`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json"

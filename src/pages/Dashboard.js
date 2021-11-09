@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import classNames from "classnames";
 import { Timeline } from "react-twitter-widgets";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { Title } from "../style";
 import PlayerCard from "../components/PlayerCard";
 import Carousel from "react-elastic-carousel";
@@ -13,16 +13,9 @@ import XMLParser from "react-xml-parser";
 import InfiniteCarousel from "react-leaf-carousel"
 const Dashboard = () => {
   const [showLoader, setShowLoader] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
+  const history = useHistory()
     const {favoriteTeam, teams, setFavoriteTeam, roster, setRoster, rssFeed, setRSSFeed, videos, setVideos } = useContext(TeamContext)
-    // const {favoriteTeam, dashtheme, teams, roster, videos, teamData, teamRSSfeed} = useSelector((state) => state.preferences);
     const [teamDetails, setTeamDetails] = useState(null)
-    // const [teamRosters, setTeamRosters] = useState(null)
     const [teamInfo, setTeamInfo] = useState(null)
     const breakPoints = [
       { width: 1, itemsToShow: 1 },
@@ -39,15 +32,7 @@ const Dashboard = () => {
      
       setFavoriteTeam(team)
       
-      //   let vids = teamData.filter(item=> item.abv===id)[0].youtube;
-      //  let rssfeed = teamData.filter(item=> item.abv===id)[0].rss;
-      
-      // if(vids){
-        //   dispatch(fetchTeamVideos(vids))
-        // }
-        // if (rssfeed){
-          // dispatch(fetchRssFeed(rssfeed))
-          // }
+   
           
           
           
@@ -75,17 +60,28 @@ const Dashboard = () => {
               );
               return post})
             
-            setRSSFeed(articles)}).catch(err=>console.log(err))     
+            setRSSFeed(articles)}).catch(err=>console.log(err))   
+          
+            
     }
         
       },[id])
+
+      useEffect(() => {
+        if(favoriteTeam && teamDetails && roster && videos &&rssFeed){
+          setShowLoader(false)
+        }
+      }, [favoriteTeam , teamDetails , roster , videos ,rssFeed])
       
       return   (
     <>
       {showLoader? <TeamLoader img={favoriteTeam.logo} theme={favoriteTeam.theme}/>:
     <>
       <div className={classNames("p-20", `bg-${favoriteTeam.theme.primary}`)}>
-
+      <div style={{marginBottom:'2%'}} onClick={(e)=>{e.preventDefault(); history.push('/pick-a-team'); setFavoriteTeam(null); setTeamDetails(null); setRoster(null); setVideos(null); setRSSFeed(null);}}><svg xmlns="http://www.w3.org/2000/svg" className={` h-24 w-24 stroke-current text-${favoriteTeam.theme.secondary} hover: bg-${favoriteTeam.theme.primary}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+</svg>
+</div>
         <div className={classNames("bg-white p-6 rounded-lg shadow-lg flex justify-center items-center ",`bg-${favoriteTeam.theme.secondary}`)}>
         
           <img src={favoriteTeam?favoriteTeam.logo:''}   style={{width:'250px'}} alt={favoriteTeam.key} />
@@ -125,7 +121,7 @@ const Dashboard = () => {
 
         <Carousel breakPoints={breakPoints}>
     {
-      roster?roster["t"]["pl"].slice(0, 12).map((item, idx) => (
+      roster?roster["t"]["pl"].map((item, idx) => (
         <PlayerCard key={idx} player={item.pid} dashtheme={favoriteTeam.theme}   />
       )): <Loader
         type="Puff"
