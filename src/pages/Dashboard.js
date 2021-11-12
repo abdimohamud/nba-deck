@@ -14,8 +14,9 @@ import InfiniteCarousel from "react-leaf-carousel"
 const Dashboard = () => {
   const [showLoader, setShowLoader] = useState(true);
   const history = useHistory()
-    const {favoriteTeam, teams, setFavoriteTeam, roster, setRoster, rssFeed, setRSSFeed, videos, setVideos } = useContext(TeamContext)
+    const { teams,  roster, setRoster, rssFeed, setRSSFeed, videos, setVideos } = useContext(TeamContext)
     const [teamDetails, setTeamDetails] = useState(null)
+    const[favoriteTeam,setFavoriteTeam] = useState(null)
     const [teamInfo, setTeamInfo] = useState(null)
     console.log(teamDetails, teamInfo)
     const breakPoints = [
@@ -29,9 +30,10 @@ const Dashboard = () => {
 
   useEffect(()=>{
     if (id ){
+      
       let team = teams.filter(team=> team.key === id)[0]
-     
       setFavoriteTeam(team)
+      
       
    
           
@@ -74,7 +76,7 @@ const Dashboard = () => {
         }
       }, [favoriteTeam , teamDetails , roster , videos ,rssFeed])
       
-      return   (
+      return favoriteTeam &&   (
     <>
       {showLoader? <TeamLoader img={favoriteTeam.logo} theme={favoriteTeam.theme}/>:
     <>

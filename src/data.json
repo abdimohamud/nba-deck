@@ -398,7 +398,7 @@
       }
     ],
     "name": "Phoenix Suns",
-    "logo": "/img/Phoenix Suns.svg",
+    "logo": "/img/Phoenix-Suns-logo.svg",
     "theme": {
       "primary": "Phoenix-Suns-purple",
       "secondary": "Phoenix-Suns-orange",
@@ -491,7 +491,7 @@
     "key": "DET",
     "duo": [],
     "name": "Detroit Pistons",
-    "logo": "/img/Detriot-Pistons-logo.svg",
+    "logo": "/img/Detroit-Pistons-logo.svg",
     "theme": {
       "primary": "Red",
       "secondary": "Royal",
