@@ -20,7 +20,7 @@ const Dashboard = () => {
     const team = teams.filter(team=> team.key == id)[0]
     // const[favoriteTeam,setFavoriteTeam] = useState(null)
     const [teamInfo, setTeamInfo] = useState(null)
-    console.log(teamInfo)
+    console.log(team.youtube)
     const breakPoints = [
       { width: 1, itemsToShow: 1 },
       { width: 550, itemsToShow: 2 },
