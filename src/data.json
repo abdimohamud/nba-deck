@@ -37,7 +37,8 @@
       "alternative": "Miami-Heat-Black"
     },
     "short": "heat",
-    "youtube": "miamiheat"
+    "youtube": "miamiheat",
+    "rss": "heat"
   },
   {
     "key": "LAL",
@@ -85,7 +86,8 @@
       "alternative": "Los-Angeles-Black"
     },
     "short": "lakers",
-    "youtube": "lakers"
+    "youtube": "lakers",
+    "rss": "lakers"
   },
   {
     "key": "BOS",
@@ -133,7 +135,8 @@
       "alternative": "Celtics-Brown"
     },
     "short": "celtics",
-    "youtube": "Celtics"
+    "youtube": "Celtics",
+    "rss": "celtics"
   },
   {
     "key": "LAC",
@@ -173,7 +176,8 @@
       "alternative": "Silver"
     },
     "short": "clippers",
-    "youtube": "clippers"
+    "youtube": "Clippers",
+    "rss": "clippers"
   },
   {
     "key": "BKN",
@@ -221,7 +225,8 @@
       "alternative": "Silver"
     },
     "short": "nets",
-    "youtube": "NBANets"
+    "youtube": "NBANets",
+    "rss": "nets"
   },
   {
     "key": "CHA",
@@ -269,7 +274,8 @@
       "alternative": "Gray"
     },
     "short": "hornets",
-    "youtube": "hornets"
+    "youtube": "hornets",
+    "rss": "hornets"
   },
   {
     "key": "CHI",
@@ -317,7 +323,8 @@
       "alternative": "White"
     },
     "short": "bulls",
-    "youtube": "ChicagoBulls"
+    "youtube": "ChicagoBulls",
+    "rss": "bulls"
   },
   {
     "key": "ATL",
@@ -365,7 +372,8 @@
       "alternative": "Hawks-Charcoal"
     },
     "short": "hawks",
-    "youtube": "ATLHawks"
+    "youtube": "ATLHawks",
+    "rss": "hawks"
   },
   {
     "key": "PHX",
@@ -405,7 +413,8 @@
       "alternative": "Phoenix-Suns-black"
     },
     "short": "suns",
-    "youtube": "PhoenixSunsVideos"
+    "youtube": "PhoenixSunsVideos",
+    "rss": "suns"
   },
   {
     "key": "DAL",
@@ -445,7 +454,8 @@
       "alternative": "Silver"
     },
     "short": "mavericks",
-    "youtube": "mavericks"
+    "youtube": "mavericks",
+    "rss": "mavericks"
   },
   {
     "key": "DEN",
@@ -485,7 +495,8 @@
       "alternative": "Flatirons-Red"
     },
     "short": "nuggets",
-    "youtube": "NuggetsTV"
+    "youtube": "NuggetsTV",
+    "rss": "nuggets"
   },
   {
     "key": "DET",
@@ -498,7 +509,8 @@
       "alternative": "Gray"
     },
     "short": "pistons",
-    "youtube": "DetPistonsOfficial"
+    "youtube": "DetPistonsOfficial",
+    "rss": "pistons"
   },
   {
     "key": "GSW",
@@ -538,7 +550,8 @@
       "alternative": "White"
     },
     "short": "warriors",
-    "youtube": "/warriors"
+    "youtube": "/warriors",
+    "rss": "warriors"
   },
   {
     "key": "HOU",
@@ -565,7 +578,8 @@
       "alternative": "Silver"
     },
     "short": "rockets",
-    "youtube": "OfficialRockets"
+    "youtube": "OfficialRockets",
+    "rss": "rockets"
   },
   {
     "key": "IND",
@@ -605,7 +619,8 @@
       "alternative": "Silver"
     },
     "short": "pacers",
-    "youtube": "Pacers"
+    "youtube": "Pacers",
+    "rss": "pacers"
   },
   {
     "key": "MEM",
@@ -645,7 +660,8 @@
       "alternative": "Yellow"
     },
     "short": "grizzlies",
-    "youtube": "MemphisGrizzlies"
+    "youtube": "MemphisGrizzlies",
+    "rss": "grizzlies"
   },
   {
     "key": "MIL",
@@ -685,7 +701,8 @@
       "alternative": "Great-lakes-blue"
     },
     "short": "bucks",
-    "youtube": "bucksdotcom"
+    "youtube": "bucksdotcom",
+    "rss": "bucks"
   },
   {
     "key": "MIN",
@@ -725,7 +742,8 @@
       "alternative": "Moonlight-grey"
     },
     "short": "timberwolves",
-    "youtube": "timberwolves"
+    "youtube": "timberwolves",
+    "rss": "timberwolves"
   },
   {
     "key": "NOP",
@@ -765,7 +783,8 @@
       "alternative": "Pelicans-gold"
     },
     "short": "pelicans",
-    "youtube": "NBAHornets"
+    "youtube": "NBAHornets",
+    "rss": "pelicans"
   },
   {
     "key": "NYK",
@@ -805,7 +824,8 @@
       "alternative": "Knicks-silver"
     },
     "short": "knicks",
-    "youtube": "nyknicks"
+    "youtube": "nyknicks",
+    "rss": "knicks"
   },
   {
     "key": "OKC",
@@ -845,7 +865,8 @@
       "alternative": "Blue"
     },
     "short": "thunder",
-    "youtube": "OklahomaCityThunder"
+    "youtube": "OklahomaCityThunder",
+    "rss": "thunder"
   },
   {
     "key": "ORL",
@@ -885,7 +906,8 @@
       "alternative": "Black"
     },
     "short": "magic",
-    "youtube": "NBAOrlandoMagic"
+    "youtube": "NBAOrlandoMagic",
+    "rss": "magic"
   },
   {
     "key": "PHI",
@@ -925,7 +947,8 @@
       "alternative": "Navy"
     },
     "short": "76ers",
-    "youtube": "philadelphia76ers"
+    "youtube": "philadelphia76ers",
+    "rss": "sixers"
   },
   {
     "key": "POR",
@@ -965,7 +988,8 @@
       "alternative": "Silver"
     },
     "short": "trail blazers",
-    "youtube": "portlandtrailblazers"
+    "youtube": "portlandtrailblazers",
+    "rss": "trail blazers"
   },
   {
     "key": "SAC",
@@ -998,14 +1022,15 @@
       }
     ],
     "name": "Sacramento Kings",
-    "logo": "/img/Sacremento-Kings-logo.svg",
+    "logo": "/img/Sacramento-Kings-logo.svg",
     "theme": {
       "primary": "Purple",
       "secondary": "Gray",
       "alternative": "Black"
     },
     "short": "kings",
-    "youtube": "acramentoKings"
+    "youtube": "acramentoKings",
+    "rss": "kings"
   },
   {
     "key": "SAS",
@@ -1045,7 +1070,8 @@
       "alternative": "White"
     },
     "short": "spurs",
-    "youtube": "saspursvideos"
+    "youtube": "saspursvideos",
+    "rss": "spurs"
   },
   {
     "key": "TOR",
@@ -1085,7 +1111,8 @@
       "alternative": "Silver"
     },
     "short": "raptors",
-    "youtube": "torontoraptors"
+    "youtube": "torontoraptors",
+    "rss": "raptors"
   },
   {
     "key": "UTA",
@@ -1125,7 +1152,8 @@
       "alternative": "Yellow"
     },
     "short": "jazz",
-    "youtube": "OfficialUtahJazz"
+    "youtube": "OfficialUtahJazz",
+    "rss": "jazz"
   },
   {
     "key": "CLE",
@@ -1165,7 +1193,8 @@
       "alternative": "Cavaliers-gold"
     },
     "short": "cavaliers",
-    "youtube": "cavs"
+    "youtube": "cavs",
+    "rss": "cavaliers"
   },
   {
     "key": "WAS",
@@ -1205,5 +1234,7 @@
       "alternative": "Silver"
     },
     "short": "wizards",
-    "youtube": "UChvzoBPvORuNGtHTMzjUsIQ"
-  }]
+    "youtube": "UChvzoBPvORuNGtHTMzjUsIQ",
+    "rss": "wizards"
+  }
+]

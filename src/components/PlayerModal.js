@@ -1,12 +1,8 @@
 import { useState } from "react";
-import moment from 'moment'
+
+import { toDateString, toImage } from "../hooks";
 const Logs = ({data}) => {
-    const toDateString =(d) =>{
-      let day = new Date(d)
-      let res =moment(day).format('l');
-   
-      return res
-    }
+    
     return (
       <div class="overflow-x-auto">
         <table class="table w-full">
@@ -47,7 +43,7 @@ const Logs = ({data}) => {
                   <div class="avatar">
                     <div class="w-12 h-12 mask mask-squircle">
                       <img
-                        src={`/img/${game.otc}-${game.otn}-logo.svg`}
+                        src={toImage(game.ota)}
                         alt="Avatar Tailwind CSS Component"
                       />
                     </div>

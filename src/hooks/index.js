@@ -1,5 +1,17 @@
 import axios from "axios"
+import moment from 'moment'
+import teams from '../data.json'
+export const toDateString =(d) =>{
+  let day = new Date(d)
+  let res =moment(day).format('l');
 
+  return res
+}
+export const toImage = (abv) => {
+  let res =teams.filter(team=>team.key===abv)[0]
+ 
+  return res.logo
+}
 export const fetchTeamRoster = (team) => {
     return axios.get(`${process.env.REACT_APP_CORS_API}/data.nba.com/data/v2015/json/mobile_teams/nba/2021/teams/${team}_roster.json`, {
       headers: {

@@ -13,26 +13,27 @@ import XMLParser from "react-xml-parser";
 import InfiniteCarousel from "react-leaf-carousel"
 const Dashboard = () => {
   const [showLoader, setShowLoader] = useState(true);
+  const {id} = useParams()
   const history = useHistory()
-    const { teams,  roster, setRoster, rssFeed, setRSSFeed, videos, setVideos } = useContext(TeamContext)
+    const { teams,  roster, setRoster, rssFeed, setRSSFeed, videos, setVideos, setFavoriteTeam, favoriteTeam } = useContext(TeamContext)
     const [teamDetails, setTeamDetails] = useState(null)
-    const[favoriteTeam,setFavoriteTeam] = useState(null)
+    const team = teams.filter(team=> team.key == id)[0]
+    // const[favoriteTeam,setFavoriteTeam] = useState(null)
     const [teamInfo, setTeamInfo] = useState(null)
-    console.log(teamDetails, teamInfo)
+    console.log(teamInfo)
     const breakPoints = [
       { width: 1, itemsToShow: 1 },
       { width: 550, itemsToShow: 2 },
       { width: 768, itemsToShow: 3 },
       { width: 1200, itemsToShow: 4 }
     ]
-    const {id} = useParams()
 
 
   useEffect(()=>{
-    if (id ){
+    // if (id ){
       
-      let team = teams.filter(team=> team.key === id)[0]
-      setFavoriteTeam(team)
+    //   // 
+    //   // setFavoriteTeam(team)
       
       
    
@@ -42,11 +43,17 @@ const Dashboard = () => {
           
           
           
-          fetchTeamRoster(favoriteTeam.short).then(res =>{ setRoster(res.data)}).catch(err=>console.log(err))
-          fetchTeamDetails(favoriteTeam.key).then(res =>{ let team = res.data.data.filter(i=> i.key ===favoriteTeam.key)[0]; setTeamDetails(team)}).catch(err=>console.log(err))
-          fetchTeamInfo(favoriteTeam.key).then(res => setTeamInfo(res.data.data)).catch(err=>console.log(err))  
-          fetchTeamVideos(favoriteTeam.youtube).then(res => setVideos(res.data)).catch(err=>console.log(err))
-          fetchRssFeed(favoriteTeam.short).then(res =>{ 
+          
+          
+            
+    // }
+    if (id && team ){
+      setFavoriteTeam(team)
+      fetchTeamRoster(team.short).then(res =>{ setRoster(res.data)}).catch(err=>console.log(err))
+          fetchTeamDetails(team.key).then(res =>{ let teamdet = res.data.data.filter(i=> i.key ===team.key)[0]; setTeamDetails(teamdet)}).catch(err=>console.log(err))
+          fetchTeamInfo(team.key).then(res => setTeamInfo(res.data.data)).catch(err=>console.log(err))  
+          fetchTeamVideos(team.youtube).then(res => setVideos(res.data)).catch(err=>console.log(err))
+          fetchRssFeed(team.rss).then(res =>{ 
             const jsonDataFromXml = new XMLParser().parseFromString(res.data);
 
             let result = jsonDataFromXml.children[0].children.splice(4, 10);
@@ -64,11 +71,9 @@ const Dashboard = () => {
               return post})
             
             setRSSFeed(articles)}).catch(err=>console.log(err))   
-          
-            
     }
         
-      },[id])
+      },[id, team])
 
       useEffect(() => {
         if(favoriteTeam && teamDetails && roster && videos &&rssFeed){
@@ -76,12 +81,12 @@ const Dashboard = () => {
         }
       }, [favoriteTeam , teamDetails , roster , videos ,rssFeed])
       
-      return favoriteTeam &&   (
+      return favoriteTeam&&   (
     <>
-      {showLoader? <TeamLoader img={favoriteTeam.logo} theme={favoriteTeam.theme}/>:
+      {showLoader? <TeamLoader img={team.logo} theme={favoriteTeam.theme}/>:
     <>
       <div className={classNames("p-20", `bg-${favoriteTeam.theme.primary}`)}>
-      <div style={{marginBottom:'2%'}} onClick={(e)=>{e.preventDefault(); history.push('/pick-a-team'); setFavoriteTeam(null); setTeamDetails(null); setRoster(null); setVideos(null); setRSSFeed(null);}}><svg xmlns="http://www.w3.org/2000/svg" className={` h-24 w-24 stroke-current text-${favoriteTeam.theme.secondary} hover: bg-${favoriteTeam.theme.primary}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div style={{marginBottom:'2%'}} onClick={(e)=>{e.preventDefault(); setFavoriteTeam(null);  setTeamDetails(null); setRoster(null); setVideos(null); setRSSFeed(null); history.push('/pick-a-team')}}><svg xmlns="http://www.w3.org/2000/svg" className={` h-24 w-24 stroke-current text-${favoriteTeam.theme.secondary} hover: bg-${favoriteTeam.theme.primary}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
 </svg>
 </div>
@@ -129,7 +134,7 @@ const Dashboard = () => {
       />}</p>
       <p className="flex">Championships:{teamDetails?teamDetails["3"]["0"].map((item, idx)=>{return (<div key={idx}>🏆</div>)}):0}</p>
       {/* <p>All Time Record:  3427-2331</p> */}
-      <div className="justify-end space-x-2 card-actions"> <a href={teamInfo?`https://www.${teamInfo.website}`:""} ><button className="btn">Learn More → </button> </a></div></div>
+      <div className="justify-end space-x-2 card-actions"> <a href={teamInfo?`https://www.${teamInfo[0].website}`:""} ><button className="btn">Learn More → </button> </a></div></div>
       <h2 className={classNames(" text-4xl text-center font-bold card-title",`bg-${favoriteTeam.theme.secondary} text-${favoriteTeam.theme.alternative}`)}>The Roster</h2>
     
       <div className="card-wrapper">   
@@ -256,7 +261,8 @@ const Dashboard = () => {
                     <a
                       href={`https://www.youtube.com/watch?v=${item.videoId}`}
                       target="_new"
-                      className="title font-bold block cursor-pointer hover:underline"
+                      style={{color:"white"}}
+                      className="title font-bold text-white-100 block cursor-pointer hover:underline"
                     >
                       {item.title}
                     </a>
