@@ -50,6 +50,9 @@ export const fetchTeamInfo = (abv) =>{
 }
 
 export const fetchRssFeed = (team)=>{
+  if(team ==null){
+    return {}
+  }
   return axios.get(`${process.env.REACT_APP_CORS_API}/nba.com/${team}/rss.xml`, {
       headers: {
         "Access-Control-Allow-Origin": "*",

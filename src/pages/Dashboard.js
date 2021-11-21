@@ -53,33 +53,36 @@ const Dashboard = () => {
           fetchTeamDetails(team.key).then(res =>{ let teamdet = res.data.data.filter(i=> i.key ===team.key)[0]; setTeamDetails(teamdet)}).catch(err=>console.log(err))
           fetchTeamInfo(team.key).then(res => setTeamInfo(res.data.data)).catch(err=>console.log(err))  
           fetchTeamVideos(team.youtube).then(res => setVideos(res.data)).catch(err=>console.log(err))
-          fetchRssFeed(team.rss).then(res =>{ 
-            const jsonDataFromXml = new XMLParser().parseFromString(res.data);
+          if(team.rss){
 
-            let result = jsonDataFromXml.children[0].children.splice(4, 10);
-    
-            let articles = result.map((item) => {
-              let post = item.children.filter(
-                (e) =>
-                  e.name === "enclosure" ||
-                  e.name === "author" ||
-                  e.name === "title" ||
-                  e.name === "description" ||
-                  e.name === "link" ||
-                  e.name === "pubDate"
-              );
-              return post})
-            
-            setRSSFeed(articles)}).catch(err=>console.log(err))   
+            fetchRssFeed(team.rss).then(res =>{ 
+              const jsonDataFromXml = new XMLParser().parseFromString(res.data);
+  
+              let result = jsonDataFromXml.children[0].children.splice(4, 10);
+      
+              let articles = result.map((item) => {
+                let post = item.children.filter(
+                  (e) =>
+                    e.name === "enclosure" ||
+                    e.name === "author" ||
+                    e.name === "title" ||
+                    e.name === "description" ||
+                    e.name === "link" ||
+                    e.name === "pubDate"
+                );
+                return post})
+              
+              setRSSFeed(articles)}).catch(err=>console.log(err))   
+          }
     }
         
       },[id, team])
 
       useEffect(() => {
-        if(favoriteTeam && teamDetails && roster && videos &&rssFeed){
+        if(favoriteTeam && teamDetails && roster && videos ){
           setShowLoader(false)
         }
-      }, [favoriteTeam , teamDetails , roster , videos ,rssFeed])
+      }, [favoriteTeam , teamDetails , roster , videos ])
       
       return favoriteTeam&&   (
     <>
